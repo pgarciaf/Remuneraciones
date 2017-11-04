@@ -1,0 +1,528 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Facturación Electrónica</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Augment Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+ <!-- Bootstrap Core CSS -->
+<link href="css/bootstrap.min.css" rel='stylesheet' type='text/css' />
+	<!-- Custom CSS -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+
+<link href="css/style_grid.css" rel="stylesheet" type="text/css" media="all" />
+	<!-- Graph CSS -->
+<link href="css/font-awesome.css" rel="stylesheet"> 
+	<!-- jQuery -->
+<link href='//fonts.googleapis.com/css?family=Roboto:700,500,300,100italic,100,400' rel='stylesheet' type='text/css'>
+	<!-- lined-icons -->
+<link rel="stylesheet" href="css/icon-font.min.css" type='text/css' />
+	<!-- /js -->
+<script src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/modernizr.custom.04022.js"></script>
+<!-- //js-->
+</head> 
+<body>
+   <div class="page-container">
+   <!--/content-inner-->
+	<div class="left-content">
+	   <div class="inner-content">
+		<!-- header-starts -->
+			<div class="header-section">
+						<!--menu-right-->
+						<div class="top_menu">
+						        <div class="main-search">
+											<form>
+											   <input type="text" value="Search" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Search';}" class="text"/>
+												<input type="submit" value=""/>
+											</form>
+									<div class="close"><img src="images/cross.png" /></div>
+								</div>
+									<div class="srch"><button></button></div>
+									<script type="text/javascript">
+										 $('.main-search').hide();
+										$('button').click(function (){
+											$('.main-search').show();
+											$('.main-search text').focus();
+										}
+										);
+										$('.close').click(function(){
+											$('.main-search').hide();
+										});
+									</script>
+							<!--/profile_details-->
+								<div class="profile_details_left">
+									<ul class="nofitications-dropdown">
+											<li class="dropdown note dra-down">
+											  <div id="dd" class="wrapper-dropdown-3" tabindex="1">
+																			<span>Italy</span>
+																			<ul class="dropdown">
+																				<li><a class="deutsch">France</a></li>
+																				<li><a class="english"> Italy</a></li>
+																				<li><a class="espana">Brazil</a></li>
+																				<li><a class="russian">Usa</a></li>
+
+																			</ul>
+																		</div>
+																		<script type="text/javascript">
+			
+																	function DropDown(el) {
+																		this.dd = el;
+																		this.placeholder = this.dd.children('span');
+																		this.opts = this.dd.find('ul.dropdown > li');
+																		this.val = '';
+																		this.index = -1;
+																		this.initEvents();
+																	}
+																	DropDown.prototype = {
+																		initEvents : function() {
+																			var obj = this;
+
+																			obj.dd.on('click', function(event){
+																				$(this).toggleClass('active');
+																				return false;
+																			});
+
+																			obj.opts.on('click',function(){
+																				var opt = $(this);
+																				obj.val = opt.text();
+																				obj.index = opt.index();
+																				obj.placeholder.text(obj.val);
+																			});
+																		},
+																		getValue : function() {
+																			return this.val;
+																		},
+																		getIndex : function() {
+																			return this.index;
+																		}
+																	}
+
+																	$(function() {
+
+																		var dd = new DropDown( $('#dd') );
+
+																		$(document).click(function() {
+																			// all dropdowns
+																			$('.wrapper-dropdown-3').removeClass('active');
+																		});
+
+																	});
+
+																</script>
+													
+										
+										</li>
+									
+											
+						<li class="dropdown note">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-sign-out"></i> <span class="badge"></span></a>
+								<ul class="dropdown-menu two first">
+									<li>
+										<div class="notification_header">
+											<h3>Cerrar Sesión</h3> 
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<div class="user_img">
+												<img src="images/cerrar.png" alt="cerrar">
+											</div>
+											<div class="notification_desc">
+												
+												<p><span>Cerrar Sesión</span></p>
+											</div>
+											<div class="clearfix"></div>	
+										</a>
+									</li>
+								</ul>
+							</li>		   							   		
+							<div class="clearfix"></div>	
+								</ul>
+							</div>
+							<div class="clearfix"></div>	
+							<!--//profile_details-->
+						</div>
+						<!--//menu-right-->
+					<div class="clearfix"></div>
+				</div>
+					<!-- //header-ends -->
+						<!--outter-wp-->
+							<div class="outter-wp">
+									<!--sub-heard-part-->
+									  <div class="sub-heard-part">
+									   <ol class="breadcrumb m-b-0">
+											<li><a href="index.html">Inicio</a></li>
+											<li class="active">Vendedores</li>
+										</ol>
+									   </div>
+								  <!--//sub-heard-part-->
+									<div class="graph-visual tables-main">
+											
+													<h3 class="inner-tittle two">Vendedores <button type="button" class="btn btn-primary btn-flat btn-pri btn-lg" data-toggle="modal" data-target="#myModal"><i class="fa fa-plus" aria-hidden="true"></i> Nuevo Vendedor</button></h3>
+
+													<h3 class="inner-tittle two">Descripción</h3>
+														  <div class="graph">
+
+														  	
+															<div class="tables">
+																<table class="table"> 
+																	<thead> 
+																		<tr> 
+																			<th>Rut</th> 
+																			<th>Nombre</th> 
+																			<th>Dirección</th> 
+																			<th>Teléfono</th> 
+																			<th>Estado</th>
+																			<th>Opciones</th>
+
+																		</tr> 
+																	</thead> 
+																	<tbody> 
+																		<tr class="active"> 
+																			<th scope="row">95.516.320-4</th> 
+																			<td>Agricola y Comercial</td> 
+																			<td>Av. San Miguel</td> 
+																			<td>912345678</td> 
+																			<td>Activo</td>
+																			<td>
+																				<button type="button" class="btn btn-info" id="opciones" title="Editar"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+        																		<button type="button" class="btn btn-success" id="opciones" title="Exportar"><i class="fa fa-share-square-o" aria-hidden="true"></i></button>
+        																		<button type="button" class="btn btn-danger" id="opciones" title="Eliminar"><i class="fa fa-times" aria-hidden="true"></i></button>
+																			</td>
+																		</tr> 
+																		<tr> 
+																			<th scope="row">95.516.320-4</th> 
+																			<td>Agricola y Comercial</td> 
+																			<td>Av. San Miguel</td> 
+																			<td>912345678</td>
+																			<td>Activo</td>
+																			<td>
+																				<button type="button" class="btn btn-info" id="opciones" title="Editar"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+        																		<button type="button" class="btn btn-success" id="opciones" title="Exportar"><i class="fa fa-share-square-o" aria-hidden="true"></i></button>
+        																		<button type="button" class="btn btn-danger" id="opciones" title="Eliminar"><i class="fa fa-times" aria-hidden="true"></i></button>
+																			</td> 
+																		</tr> 
+																		<tr class="success"> 
+																			<th scope="row">95.516.320-4</th> 
+																			<td>Agricola y Comercial</td> 
+																			<td>Av. San Miguel</td> 
+																			<td>912345678</td>
+																			<td>Activo</td>
+																			<td>
+																				<button type="button" class="btn btn-info" id="opciones" title="Editar"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+        																		<button type="button" class="btn btn-success" id="opciones" title="Exportar"><i class="fa fa-share-square-o" aria-hidden="true"></i></button>
+        																		<button type="button" class="btn btn-danger" id="opciones" title="Eliminar"><i class="fa fa-times" aria-hidden="true"></i></button>
+																			</td> 
+																		</tr> 
+																		
+																	</tbody> 
+																</table> 
+															</div>
+												
+													</div>
+										</div>
+
+										<!--//graph-visual-->
+									</div>
+									<!--//outer-wp-->
+									 
+								</div>
+							</div>
+							<script src="js/cbpFWTabs.js"></script>
+							<script>
+								new CBPFWTabs( document.getElementById( 'tabs' ) );
+							</script>
+				<!--//content-inner-->
+<!-- //Modal -->
+<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" id="myModal">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+    	<div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="exampleModalLabel">Nuevo Cliente</h4>
+      </div>
+      <div class="modal-body">
+      	<table class="table">
+      		<thead> 
+				<tr> 
+					<th>Rut:</th> 
+					<th>Nombre Completo:</th>
+				</tr> 
+			</thead>
+			<tbody>
+				<td>
+					<input type="text" name="rut" class="form-control" id="rut" placeholder="98.123.456-7">
+				</td>
+				<td>
+					<input type="text" name="nombre" class="form-control" id="nombre" placeholder="Nombre Completo">
+				</td>
+			</tbody>
+      	</table>
+
+      	<table class="table">
+      		<thead> 
+				<tr> 
+					<th>Dirección:</th> 
+					<th>Teléfono:</th>
+				</tr> 
+			</thead>
+			<tbody>
+				<td>
+					<input type="text" name="direccion" class="form-control" id="direccion" placeholder="Dirección">
+				</td>
+				<td>
+					<input type="text" name="telefono" class="form-control" id="telefono" placeholder="Teléfono">
+				</td>
+			</tbody>
+      	</table>
+
+      	<table class="table">
+      		<thead> 
+				<tr> 
+					<th>Comisión:</th> 
+					<th>Estado:</th>
+					<th>Email:</th>
+				</tr> 
+			</thead>
+			<tbody>
+				<td>
+					<select name="selector1" id="selector1" class="form-control1">
+						<option>Seleccione.</option>
+						<option>Dolore, ab unde modi est!</option>
+						<option>Illum, fuga minus sit eaque.</option>
+						<option>Consequatur ducimus maiores voluptatum minima.</option>
+					</select>
+				</td>
+
+				<td>
+					<select name="selector1" id="selector1" class="form-control1">
+						<option>Seleccione.</option>
+						<option>Dolore, ab unde modi est!</option>
+						<option>Illum, fuga minus sit eaque.</option>
+						<option>Consequatur ducimus maiores voluptatum minima.</option>
+					</select>
+				</td>
+
+				<td>
+					<input type="text" name="email" class="form-control" id="email" placeholder="Email">
+				</td>
+				
+			</tbody>
+      	</table>
+
+      	<table class="table">
+      		<thead> 
+				<tr> 
+					<th>Fecha Inicio:</th> 
+					<th>Fecha Actualización:</th>
+					
+				</tr> 
+			</thead>
+			<tbody>
+				
+
+				<td>
+					<input placeholder="Fecha Inicio" class="form-control" id="datepicker" type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required=""/>
+				</td>
+
+				<td>
+					<input placeholder="Fecha Actualización" class="form-control" id="datepicker" type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required=""/>
+				</td>
+				
+			</tbody>
+      	</table>
+	
+		<br>		
+		
+		<button type = "button" class = "btn btn-primary" id="comando">Guardar</button>
+		<button type = "button" class = "btn btn-primary" data-dismiss="modal"  id="comando">Cancelar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- //Fin Modal -->
+
+<!-- //Modal apertura de caja -->
+<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" id="myModal1">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="exampleModalLabel">Apertura de Caja</h4>
+      </div>
+
+      <div class="modal-body">
+      	<input type="text" name="caja" class="form-control" id="caja" placeholder="Caja:">
+      	<br>
+      	<input type="text" name="cajero" class="form-control" id="cajero" placeholder="Cajero:">
+      	<br>
+		<input type="text" name="efectivo" class="form-control" id="efectivo" placeholder="Efectivo:">
+		<br>
+		<input type="text" name="cheque" class="form-control" id="cheque" placeholder="Cheques:">
+		<br>
+		<input type="text" name="otros" class="form-control" id="otros" placeholder="Otros:">
+		<br>
+		<button type = "button" class = "btn btn-primary" id="comando">Ingresar</button>
+		<button type = "button" class = "btn btn-primary" data-dismiss="modal"  id="comando">Cancelar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- //Modal apertura de caja -->
+
+<!-- //Modal certificado -->
+<div class="modal fade bs-example-modal-md" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" id="myModal2">
+  <div class="modal-dialog modal-md" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="exampleModalLabel">Carga de Certificado</h4>
+      </div>
+
+      <div class="modal-body">
+      	<div id="seleccion">
+      		<p class="seleccion">Examinar <i class="fa fa-upload" aria-hidden="true"></i></p>
+			<input type="file" name="file" id="file">
+		</div>
+		<br>
+		<button type = "button" class = "btn btn-primary" id="comando">Ingresar</button>
+		<button type = "button" class = "btn btn-primary" data-dismiss="modal"  id="comando">Cancelar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- //Modal certificado -->
+			<!--/sidebar-menu-->
+				<div class="sidebar-menu">
+					<header class="logo">
+					<a href="#" class="sidebar-icon"> <span class="fa fa-bars"></span> </a> <a href="index.html"> <span id="logo"> <h1>Factura</h1></span> 
+					<!--<img id="logo" src="" alt="Logo"/>--> 
+				  </a> 
+				</header>
+			<div style="border-top:1px solid rgba(69, 74, 84, 0.7)"></div>
+			<!--/down-->
+			
+							   <!--//down-->
+                           <div class="menu">
+									<ul id="menu" >
+										<li><a href="index.html"><i class="fa fa-tachometer"></i> <span>Menú</span></a></li>
+
+										 <li id="menu-academico" ><a href="#"><i class="fa fa-table"></i> <span>General</span> <span class="fa fa-angle-right" style="float: right"></span></a>
+										   <ul id="menu-academico-sub" >
+											<li id="menu-academico-avaliacoes" ><a href="clientes.html"> Clientes</a></li>
+											<li id="menu-academico-boletim" ><a href="vendedores.html">Vendedores</a></li>
+											<li id="menu-academico-avaliacoes" ><a href="c#">Condición de Pago</a></li>
+											<li id="menu-academico-avaliacoes" ><a href="sucursales.html">Sucursales</a></li>
+											
+										  </ul>
+										</li>
+
+										 <li id="menu-academico" ><a href="#"><i class="fa fa-file-text-o"></i> <span>Facturación</span> <span class="fa fa-angle-right" style="float: right"></span></a>
+											 <ul id="menu-academico-sub" >
+												<li id="menu-academico-avaliacoes" ><a href="empresas.html">Registro Empresa</a></li>
+												<li id="menu-academico-boletim" ><a href="#">Certificado Digital</a></li>
+												<li id="menu-academico-boletim" ><a href="#">Carga de CAF</a></li>
+												<li id="menu-academico-boletim" ><a href="#">Carga DTE Compras</a></li>
+												<li id="menu-academico-boletim" ><a href="#">Carga Contribuyentes</a></li>
+												<li id="menu-academico-boletim" ><a href="#">Configuración de Emails</a></li>
+											  </ul>
+										 </li>
+
+										<li id="menu-comunicacao" ><a href="#"><i class="fa fa-list"></i> <span>Mov Facturación</span><span class="fa fa-angle-right" style="float: right"></span></a>
+									  		<ul id="menu-comunicacao-sub" >
+												<li id="menu-mensagens" style="width:150px" ><a href="project.html">Ventas</a>
+										  			<ul id="menu-mensagens-sub" >
+														<li id="menu-mensagens-enviadas" style="width:140px" ><a href="#">Venta Directa</a></li>
+														<li id="menu-mensagens-recebidas"  style="width:140px"><a href="#">Guia Despacho</a></li>
+														<li id="menu-mensagens-recebidas"  style="width:140px"><a href="#">Nota Crédito</a></li>
+														<li id="menu-mensagens-recebidas"  style="width:140px"><a href="#">Nota Débito</a></li>
+										  			</ul>
+												</li>
+
+												<li id="menu-mensagens" style="width:150px" ><a href="#">Punto de Ventas</a>
+										  			<ul id="menu-mensagens-sub" >
+														<li id="menu-mensagens-enviadas" style="width:140px" ><a href="#">Nota Venta</a></li>
+										  			</ul>
+												</li>
+
+												<li id="menu-mensagens" style="width:150px" ><a href="project.html">Factura Lotes</a>
+										  			<ul id="menu-mensagens-sub" >
+														<li id="menu-mensagens-enviadas" style="width:140px" ><a href="#">Fact Guia</a></li>
+														<li id="menu-mensagens-recebidas"  style="width:140px"><a href="#">Fact Nota Venta</a></li>
+										  			</ul>
+												</li>
+									  		</ul>
+									</li>
+
+									
+									 <li><a href="#"><i class="lnr lnr-envelope"></i> <span>Buzón de Correo</span><span class="fa fa-angle-right" style="float: right"></span></a>
+									   	<ul>
+											<li><a href="#"><i class="fa fa-inbox"></i> Bandeja de Entrada</a></li>
+											<li><a href="#"><i class="fa fa-pencil-square-o"></i> Redactar Correo</a></li>
+											
+									  	</ul>
+									</li>
+
+									<li id="menu-academico" ><a href="#"><i class="fa fa-user"></i> <span>Usuario</span> <span class="fa fa-angle-right" style="float: right"></span></a>
+										  <ul id="menu-academico-sub" >
+										    <li id="menu-academico-avaliacoes" ><a href="#">Usuarios</a></li>
+										    <li id="menu-academico-boletim" ><a href="#">Nuevo Usuario</a></li>
+											
+										  </ul>
+									 </li>	
+								</ul>
+								</div>
+							  </div>
+							  <div class="clearfix"></div>		
+							</div>
+							<script>
+							var toggle = true;
+										
+							$(".sidebar-icon").click(function() {                
+							  if (toggle)
+							  {
+								$(".page-container").addClass("sidebar-collapsed").removeClass("sidebar-collapsed-back");
+								$("#menu span").css({"position":"absolute"});
+							  }
+							  else
+							  {
+								$(".page-container").removeClass("sidebar-collapsed").addClass("sidebar-collapsed-back");
+								setTimeout(function() {
+								  $("#menu span").css({"position":"relative"});
+								}, 400);
+							  }
+											
+											toggle = !toggle;
+										});
+							</script>
+<!--js -->
+
+	<script src="js/jquery.nicescroll.js"></script>
+	<script src="js/scripts.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+   <script src="js/bootstrap.min.js"></script>
+  <!-- /Script Modal -->
+<script>
+	$('#myModal').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget) 
+   
+  
+})
+</script>
+<!-- /Script Modal -->
+<!--date-piker-->
+<link rel="stylesheet" href="css/jquery-ui.css" />
+<script src="js/jquery-ui.js"></script>
+<script>
+	$(function() {
+		$( "#datepicker,#datepicker1" ).datepicker();
+	});
+</script>
+<!--date-piker-->
+</body>
+</html>
