@@ -460,7 +460,7 @@ a:hover.tooltips span {
 /*--//down--*/
 /*--/top_header--*/
 span#logo h1 {
-         font-size: 2em;
+    font-size: 1.5em;
     color: #fff;
     margin: 0;
     text-decoration: none;
@@ -3167,7 +3167,7 @@ a.read.fourth:hover{
 		text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
 		position: absolute;
 		top: -29%;
-		left: 27%;
+		left: 10%;
 		font-size: 3em;
 		color: #fff;
 	}

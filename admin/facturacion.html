@@ -156,13 +156,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									  <div class="sub-heard-part">
 									   <ol class="breadcrumb m-b-0">
 											<li><a href="index.html">Inicio</a></li>
-											<li class="active">Clientes</li>
+											<li class="active">Facturación</li>
 										</ol>
 									   </div>
 								  <!--//sub-heard-part-->
 									<div class="graph-visual tables-main">
 											
-													<h3 class="inner-tittle two">Clientes <button type="button" class="btn btn-primary btn-flat btn-pri btn-lg" data-toggle="modal" data-target="#myModal"><i class="fa fa-plus" aria-hidden="true"></i> Nuevo Cliente</button></h3>
+													<h3 class="inner-tittle two">Facturación <button type="button" class="btn btn-primary btn-flat btn-pri btn-lg" data-toggle="modal" data-target="#myModal"><i class="fa fa-plus" aria-hidden="true"></i> Nueva Factura</button></h3>
 
 													<h3 class="inner-tittle two">Descripción</h3>
 														  <div class="graph">
@@ -174,9 +174,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 																		<tr> 
 																			<th>Rut</th> 
 																			<th>Razón Social</th> 
-																			<th>Dirección</th> 
-																			<th>Giro</th> 
-																			<th>Estado</th>
+																			<th>Nº Doc/ Tipo Doc</th> 
+																			<th>Fecha</th> 
+																			<th>Total</th>
 																			<th>Opciones</th>
 
 																		</tr> 
@@ -185,9 +185,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 																		<tr class="active"> 
 																			<th scope="row">95.516.320-4</th> 
 																			<td>Agricola y Comercial</td> 
-																			<td>Av. San Miguel</td> 
-																			<td>Elaboración de alimento para animales</td> 
-																			<td>Activo</td>
+																			<td>15 - Factura</td> 
+																			<td>17-10-2017 / 18-10-2017</td> 
+																			<td>100.000</td>
 																			<td>
 																				<button type="button" class="btn btn-info" id="opciones" title="Editar"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
         																		<button type="button" class="btn btn-success" id="opciones" title="Exportar"><i class="fa fa-share-square-o" aria-hidden="true"></i></button>
@@ -197,9 +197,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 																		<tr> 
 																			<th scope="row">95.516.320-4</th> 
 																			<td>Agricola y Comercial</td> 
-																			<td>Av. San Miguel</td> 
-																			<td>Elaboración de alimento para animales</td>
-																			<td>Activo</td>
+																			<td>15 - Factura</td> 
+																			<td>17-10-2017 / 18-10-2017</td> 
+																			<td>100.000</td>
 																			<td>
 																				<button type="button" class="btn btn-info" id="opciones" title="Editar"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
         																		<button type="button" class="btn btn-success" id="opciones" title="Exportar"><i class="fa fa-share-square-o" aria-hidden="true"></i></button>
@@ -209,9 +209,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 																		<tr class="success"> 
 																			<th scope="row">95.516.320-4</th> 
 																			<td>Agricola y Comercial</td> 
-																			<td>Av. San Miguel</td> 
-																			<td>Elaboración de alimento para animales</td>
-																			<td>Activo</td>
+																			<td>15 - Factura</td> 
+																			<td>17-10-2017 / 18-10-2017</td> 
+																			<td>100.000</td>
 																			<td>
 																				<button type="button" class="btn btn-info" id="opciones" title="Editar"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
         																		<button type="button" class="btn btn-success" id="opciones" title="Exportar"><i class="fa fa-share-square-o" aria-hidden="true"></i></button>
@@ -243,20 +243,54 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <div class="modal-content">
     	<div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="exampleModalLabel">Nuevo Cliente</h4>
+        <h4 class="modal-title" id="exampleModalLabel">Nueva Factura</h4>
       </div>
       <div class="modal-body">
       	<table class="table">
+      		<thead>
+      			<tr>
+      				<th>Documento:</th>
+      				<th>Nº Documento:</th>
+      				<th>Fecha Ini</th>
+      				<th>Feche Venc</th>
+      			</tr>
+      		</thead>
+      		<tbody>
+      			<td>
+      				<select name="selector1" id="selector1" class="form-control1">
+						<option>Seleccione.</option>
+						<option>Dolore, ab unde modi est!</option>
+						<option>Illum, fuga minus sit eaque.</option>
+						<option>Consequatur ducimus maiores voluptatum minima.</option>
+					</select>
+      			</td>
+
+      			<td>
+      				<input type="text" name="num_documento" class="form-control" id="rut" placeholder="00022">
+      			</td>
+
+      			<td>
+      				<input placeholder="Fecha Inicio" class="form-control" id="datepicker" type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required=""/>
+      			</td>
+
+      			<td>
+      				<input placeholder="Fecha Venc" class="form-control" id="datepicker" type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required=""/>
+      			</td>
+      		</tbody>
+      	</table>
+      	<table class="table">
       		<thead> 
 				<tr> 
-					<th>Rut:</th> 
+					<th>Rut:</th>
 					<th>Razón Social:</th>
 				</tr> 
 			</thead>
 			<tbody>
 				<td>
 					<input type="text" name="rut" class="form-control" id="rut" placeholder="98.123.456-7">
+						
 				</td>
+				
 				<td>
 					<input type="text" name="razon_social" class="form-control" id="razon_social" placeholder="Razón Social">
 				</td>
@@ -267,7 +301,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       		<thead> 
 				<tr> 
 					<th>Dirección:</th> 
-					<th>Comuna:</th>
+					<th>Giro:</th>
 				</tr> 
 			</thead>
 			<tbody>
@@ -275,12 +309,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<input type="text" name="direccion" class="form-control" id="direccion" placeholder="Dirección">
 				</td>
 				<td>
-					<select name="selector1" id="selector1" class="form-control1">
-						<option>Seleccione.</option>
-						<option>Dolore, ab unde modi est!</option>
-						<option>Illum, fuga minus sit eaque.</option>
-						<option>Consequatur ducimus maiores voluptatum minima.</option>
-					</select>
+					<input type="text" name="giro" class="form-control" id="giro" placeholder="Giro:">
 				</td>
 			</tbody>
       	</table>
@@ -288,12 +317,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       	<table class="table">
       		<thead> 
 				<tr> 
-					<th>Giro:</th> 
-					<th>Teléfono:</th>
-					<th>Email:</th>
+					<th>Ciudad:</th> 
+					<th>Comuna:</th>
+					<th>Vendedor:</th>
 				</tr> 
 			</thead>
 			<tbody>
+				<td>
+					<input type="text" name="ciudad" class="form-control" id="ciudad" placeholder="Ciudad">
+				</td>
+
+				<td>
+					<input type="text" name="comuna" class="form-control" id="comuna" placeholder="Comuna">
+				</td>
+
 				<td>
 					<select name="selector1" id="selector1" class="form-control1">
 						<option>Seleccione.</option>
@@ -301,14 +338,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<option>Illum, fuga minus sit eaque.</option>
 						<option>Consequatur ducimus maiores voluptatum minima.</option>
 					</select>
-				</td>
-
-				<td>
-					<input type="text" name="telefono" class="form-control" id="telefono" placeholder="Teléfono">
-				</td>
-
-				<td>
-					<input type="text" name="email" class="form-control" id="email" placeholder="Email">
 				</td>
 				
 			</tbody>
@@ -317,20 +346,34 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       	<table class="table">
       		<thead> 
 				<tr> 
-					<th>Fecha Inicio:</th> 
-					<th>Fecha Actualización:</th>
+					<th>Código:</th> 
+					<th>Producto:</th>
+					<th>Precio:</th>
 					
 				</tr> 
 			</thead>
 			<tbody>
 				
-
 				<td>
-					<input placeholder="Fecha Inicio" class="form-control" id="datepicker" type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required=""/>
+					<input type="text" name="codigo" class="form-control" id="codigo" placeholder="Código">
 				</td>
 
 				<td>
-					<input placeholder="Fecha Actualización" class="form-control" id="datepicker" type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required=""/>
+					<select name="selector1" id="selector1" class="form-control1">
+						<option>Seleccione.</option>
+						<option>Dolore, ab unde modi est!</option>
+						<option>Illum, fuga minus sit eaque.</option>
+						<option>Consequatur ducimus maiores voluptatum minima.</option>
+					</select>
+				</td>
+
+				<td>
+					<select name="selector1" id="selector1" class="form-control1">
+						<option>Seleccione.</option>
+						<option>Dolore, ab unde modi est!</option>
+						<option>Illum, fuga minus sit eaque.</option>
+						<option>Consequatur ducimus maiores voluptatum minima.</option>
+					</select>
 				</td>
 				
 			</tbody>
@@ -339,19 +382,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       	<table class="table">
       		<thead> 
 				<tr> 
-					<th>Estado:</th> 
-					<th>Tipo:</th>
+					<th>Cantidad:</th> 
+					<th>Descuento:</th>
 					
 				</tr> 
 			</thead>
 			<tbody>
 				<td>
-					<select name="selector1" id="selector1" class="form-control1">
-						<option>Seleccione.</option>
-						<option>Dolore, ab unde modi est!</option>
-						<option>Illum, fuga minus sit eaque.</option>
-						<option>Consequatur ducimus maiores voluptatum minima.</option>
-					</select>
+					<input type="text" name="cantidad" class="form-control" id="cantidad" placeholder="Cantidad">
 				</td>
 
 				<td>
@@ -366,10 +404,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</tbody>
       	</table>	
 		<br>		
-		<button type = "button" class = "btn btn-primary" id="comando">Cuenta Corriente</button>
-		<button type = "button" class = "btn btn-primary" id="comando">Bitacora</button>
+		
 		<button type = "button" class = "btn btn-primary" id="comando">Guardar</button>
-		<button type = "button" class = "btn btn-primary" data-dismiss="modal"  id="comando">Cancelar</button>
+		<button type = "button" class = "btn btn-success" id="comando">Imprimir</button>
+		<button type = "button" class = "btn btn-danger" data-dismiss="modal"  id="comando">Cancelar</button>
       </div>
     </div>
   </div>
@@ -464,21 +502,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 										<li id="menu-comunicacao" ><a href="#"><i class="fa fa-list"></i> <span>Mov Facturación</span><span class="fa fa-angle-right" style="float: right"></span></a>
 									  		<ul id="menu-comunicacao-sub" >
-									  			<li id="menu-mensagens" style="width:150px" ><a href="project.html">Control Caja</a>
-										  			<ul id="menu-mensagens-sub" >
-														<li id="menu-mensagens-enviadas" style="width:180px" ><a href="#" data-toggle="modal" data-target="#myModal1">Apertura Caja</a></li>
-														<li id="menu-mensagens-recebidas"  style="width:180px"><a href="#">Ingreso Recaudación</a></li>
-														<li id="menu-mensagens-recebidas"  style="width:180px"><a href="#">Consulta</a></li>
-														<li id="menu-mensagens-recebidas"  style="width:180px"><a href="#">Libro Recaudación</a></li>
-														<li id="menu-mensagens-recebidas"  style="width:180px"><a href="#">Informe Caja Diaria</a></li>
-														<li id="menu-mensagens-recebidas"  style="width:180px"><a href="#">Cierre Caja Diaria</a></li>
-										  			</ul>
-												</li>
-
 												<li id="menu-mensagens" style="width:150px" ><a href="project.html">Ventas</a>
 										  			<ul id="menu-mensagens-sub" >
 														<li id="menu-mensagens-enviadas" style="width:140px" ><a href="#">Venta Directa</a></li>
-														<li id="menu-mensagens-recebidas"  style="width:140px"><a href="#">Caja</a></li>
 														<li id="menu-mensagens-recebidas"  style="width:140px"><a href="#">Guia Despacho</a></li>
 														<li id="menu-mensagens-recebidas"  style="width:140px"><a href="#">Nota Crédito</a></li>
 														<li id="menu-mensagens-recebidas"  style="width:140px"><a href="#">Nota Débito</a></li>
