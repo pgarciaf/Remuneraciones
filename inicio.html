@@ -36,6 +36,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script src="js/jquery.easydropdown.js"></script>
 
 <!--//skycons-icons-->
+<!--//file-->
+<script src="js/fileinput.js"></script>
+<!--//file-->
 </head> 
 <body>
 	<div class="page-container">
@@ -243,28 +246,85 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </div>
 <!-- //Modal apertura de caja -->
 
-<!-- //Modal certificado -->
+<!-- //Modal carga masiva hab/des -->
 <div class="modal fade bs-example-modal-md" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" id="myModal2">
   <div class="modal-dialog modal-md" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="exampleModalLabel">Carga de Certificado</h4>
+        <h4 class="modal-title" id="exampleModalLabel">Carga Masiva de Hab/Des</h4>
       </div>
 
       <div class="modal-body">
-      	<div id="seleccion">
-      		<p class="seleccion">Examinar <i class="fa fa-upload" aria-hidden="true"></i></p>
-			<input type="file" name="file" id="file">
-		</div>
+      	<table class="table">
+      		<thead> 
+				<tr> 
+					<th>Empresa:</th> 
+					<th>Tipo Hab/Des:</th>
+				</tr> 
+			</thead>
+			<tbody>
+				<td>
+					<input type="text" name="empresa" class="form-control" id="empresa" placeholder="Empresa">
+				</td>
+				<td>
+					<select name="selector1" id="selector1" class="form-control1">
+						<option>Seleccionar</option>
+						<option>Dolore, ab unde modi est!</option>
+						<option>Illum, fuga minus sit eaque.</option>
+						<option>Consequatur ducimus maiores voluptatum minima.</option>
+					</select>
+				</td>
+			</tbody>
+      	</table>
+      	<table class="table">
+      		<thead> 
+				<tr> 
+					<th>Código:</th> 
+					
+				</tr> 
+			</thead>
+			<tbody>
+				<td>
+					<select name="selector1" id="selector1" class="form-control1">
+						<option>Seleccionar</option>
+						<option>Dolore, ab unde modi est!</option>
+						<option>Illum, fuga minus sit eaque.</option>
+						<option>Consequatur ducimus maiores voluptatum minima.</option>
+					</select>
+				</td>
+			</tbody>
+      	</table>
+      	 	<table class="table">
+      		<thead> 
+				<tr> 
+					<th>Buscar:</th> 
+					
+				</tr> 
+			</thead>
+			<tbody>
+				
+				<td>
+					<div class="fileinput fileinput-new" data-provides="fileinput">
+    					<span class="btn btn-default btn-file">
+    						<span>Examinar</span>
+    						<input type="file" />
+    					</span>
+    					<span class="fileinput-filename"></span>
+    					<span class="fileinput-new">Ningún archivo elegido</span>
+    				</div>
+				</td>
+			</tbody>
+      	</table>
+      	
 		<br>
-		<button type = "button" class = "btn btn-primary" id="comando">Ingresar</button>
-		<button type = "button" class = "btn btn-primary" data-dismiss="modal"  id="comando">Cancelar</button>
+		<button type = "button" class = "btn btn-info" id="comando">Ingresar</button>
+		<button type = "button" class = "btn btn-danger" data-dismiss="modal"  id="comando">Cancelar</button>
       </div>
     </div>
   </div>
 </div>
-<!-- //Modal certificado -->
+<!-- //Modal carga masiva hab/des -->
 
 <!-- //Modal Parametros -->
 <div class="modal fade bs-example-modal-md" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" id="myModal13">
@@ -332,7 +392,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<a href="index.html"><span class=" name-caret">Nombre Empresa</span></a>
 						<p>System Administrator in Company</p>
 						<ul>
-							<li><a class="tooltips" href="index.html"><span>Cerrar</span><i class="lnr lnr-power-switch"></i></a></li>
+							<li><a class="tooltips" href="#"><span>Salir</span><i class="lnr lnr-power-switch"></i></a></li>
 						</ul>
 					</div>
 			<!--/down-->
@@ -355,7 +415,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				                 		      <ul id="menu-academico-sub" >
 								               <li id="menu-academico-boletim" ><a href="#">Ingresos Masivos</a>
 								                   <ul id="menu-academico-sub" >
-														<li id="menu-mensagens-enviadas" style="width:210px" ><a href="#">Ingreso Masivo de Items</a></li>
+														<li id="menu-mensagens-enviadas" style="width:210px" ><a href="#" data-toggle="modal" data-target="#myModal2">Ingreso Masivo de Items</a></li>
 														<li id="menu-mensagens-recebidas"  style="width:210px"><a href="#">Ingreso Masivo de Campos</a></li>
 														<li id="menu-mensagens-recebidas"  style="width:210px"><a href="#">Ingreso Segun plantilla</a></li>
 														<li id="menu-mensagens-recebidas"  style="width:210px"><a href="#">Mantencion de Plantillas</a></li>
@@ -450,12 +510,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- Bootstrap Core JavaScript -->
    <script src="js/bootstrap.min.js"></script>
 
-     <!-- /Script Modal -->
+<!-- /Script Modal -->
 <script>
-	$('#myModal1').on('show.bs.modal', function (event) {
+	$('#myModal').on('show.bs.modal', function (event) {
   var button = $(event.relatedTarget)  
 })
 </script>
 <!-- /Script Modal -->
+
+<!-- /Script archivo -->
+<script>
+	$("#archivo").fileinput();
+</script>
+<!-- /Script archivo -->
+
 </body>
 </html>
