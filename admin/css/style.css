@@ -291,11 +291,11 @@ li#menu-academico{
     width: 100%;
 }
 .modal-header h4{
-letter-spacing: 2px;
-    text-align: center;
-    font-weight: 700;
-    font-size: 2em;
-    margin: 0.5em 0;
+  letter-spacing: 2px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 2em;
+  margin: 0.5em 0;
 }
 .modal-header h5 {
     color: #26abf6;
@@ -2571,7 +2571,7 @@ td span.fam,span.mar,span.ur,span.work {
 	border-radius:none;
 }
 .graph h4{
-    font-size: 2em;
+    font-size: 1.5em;
     text-align: center;
     margin-bottom: 1em;
 }

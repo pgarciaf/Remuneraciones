@@ -103,7 +103,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									  <div class="sub-heard-part">
 									   <ol class="breadcrumb m-b-0">
 											<li><a href="inicio.html">Inicio</a></li>
-											<li class="active">Impuesto Único</li>
+											<li class="active">Ingreso AFP</li>
 											
 										</ol>
 									   </div>
@@ -111,7 +111,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								
 									<div class="graph-visual tables-main">
 											
-													<h3 class="inner-tittle two">Tabla de Impuesto Único</h3>
+													<h3 class="inner-tittle two">Tabla de Ingreso de Isapre <button type="button" class="btn btn-primary btn-flat btn-pri" data-toggle="modal" data-target="#myModal_Isapre"><i class="fa fa-plus" aria-hidden="true"></i> Nuevo Ingreso</button></h3>
 
 													
 														  <div class="graph">
@@ -122,10 +122,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 																	<thead> 
 																		<tr>
 																			<th></th>
-																			<th>Desde ($)</th> 
-																			<th>Hasta ($)</th> 
-																			<th>Factor</th> 
-																			<th>Rebajas ($)</th> 
+																			<th>Nombre Isapre:</th>  
+																			<th>Opciones</th> 
 																			
 
 																		</tr> 
@@ -134,22 +132,44 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 																		<tr class="active" id="variable">
 																			<td>1</td>
 
-																			<td><input type="text" name="caja" class="form-control" id="desde" placeholder="0"></td> 
+																			<td>Capital</td> 
 
-																			<td><input type="text" name="hasta" class="form-control" id="hasta" placeholder="0"></td>
-
-																			<td><input type="text" name="factor" class="form-control" id="factor" placeholder="0,000"></td>
-
-																			<td><input type="text" name="rebajas" class="form-control" id="rebajas" placeholder="0"></td> 
+																			<td>
+																				<button type="button" class="btn btn-info" id="opciones" title="Editar"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+        																		
+        																		<button type="button" class="btn btn-danger" id="opciones" title="Eliminar" data-toggle="modal" data-target="#myModal_Eliminar"><i class="fa fa-times" aria-hidden="true"></i></button>
+																			</td> 
 																			
 																		</tr> 
 																		
 																	</tbody> 
 																</table> 
-																<br>
-																<a href="#" class="btn btn-info">Guardar</a>
+																
 															</div>
-												
+													</div>
+
+													<div class="collapse" id="seccion">
+														<div class="well">
+															<h4>Ingreso de Isapre</h4>
+															<table class="table table-striped">
+																<thead> 
+																	<tr> 
+																		<th>Nombre Isapre:</th> 
+																		
+																		
+																	</tr> 
+																</thead>
+																<tbody>
+																	<td>
+																		<input type="text" name="nombre_isapr" id="nombre_isapre" class="form-control" placeholder="Nombre Isapre:">
+																	</td>
+																	
+																</tbody>
+															</table>
+															
+															<br>
+															<button type="button" class="btn btn-success">Ingresar</button>
+														</div>
 													</div>
 													
 											</div>
@@ -160,35 +180,53 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									
 								</div>
 							</div>
+
+							<script>
+								$('#seccion').collapse({
+  									toggle: false
+								})
+							</script>
 				<!--//content-inner-->
 
-<!-- //Modal apertura de caja -->
-<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" id="myModal1">
+<!-- //Modal ingresar Isapre -->
+<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" id="myModal_Isapre">
   <div class="modal-dialog modal-sm" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="exampleModalLabel">Apertura de Caja</h4>
+        <h4 class="modal-title" id="exampleModalLabel">Ingreso de Isapre</h4>
       </div>
 
       <div class="modal-body">
-      	<input type="text" name="caja" class="form-control" id="caja" placeholder="Caja:">
+      	<input type="text" name="nombre_afp" class="form-control" id="nombre_afp" placeholder="Nombre Isapre:">
       	<br>
-      	<input type="text" name="cajero" class="form-control" id="cajero" placeholder="Cajero:">
-      	<br>
-		<input type="text" name="efectivo" class="form-control" id="efectivo" placeholder="Efectivo:">
-		<br>
-		<input type="text" name="cheque" class="form-control" id="cheque" placeholder="Cheques:">
-		<br>
-		<input type="text" name="otros" class="form-control" id="otros" placeholder="Otros:">
-		<br>
-		<button type = "button" class = "btn btn-primary" id="comando">Ingresar</button>
-		<button type = "button" class = "btn btn-primary" data-dismiss="modal"  id="comando">Cancelar</button>
+		<button type = "button" class = "btn btn-info" id="comando">Ingresar</button>
+		<button type = "button" class = "btn btn-danger" data-dismiss="modal"  id="comando">Cancelar</button>
       </div>
     </div>
   </div>
 </div>
-<!-- //Modal apertura de caja -->
+<!-- //Modal ingresar Isapre -->
+
+<!-- //Modal Eliminar -->
+<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" id="myModal_Eliminar">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="exampleModalLabel">Eliminar</h4>
+      </div>
+
+      <div class="modal-body">
+      	<h4 class="modal-body">¿Deseas Eliminar?</h4>
+      	<br>
+      	<a href="#" type="button" class="btn btn-info"><span><i class="fa fa-trash-o" aria-hidden="true"></i></span> Eliminar</a>
+      	<a href="#" type="button" class="btn btn-danger" data-dismiss="modal"><span><i class="fa fa-times" aria-hidden="true"></i></span> Cancelar</a>		
+      </div>
+    </div>
+  </div>
+</div>
+<!-- //Modal Eliminar -->
 
 <!-- //Modal certificado -->
 <div class="modal fade bs-example-modal-md" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" id="myModal2">
@@ -213,7 +251,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </div>
 <!-- //Modal certificado -->
 
-<!-- //Modal Parametros -->
+<!-- //Modal Parametros configuracion -->
 <div class="modal fade bs-example-modal-md" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" id="myModal13">
   <div class="modal-dialog modal-md" role="document">
     <div class="modal-content">
@@ -226,15 +264,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       	<table class="table">
     <thead> 
 		<tr> 
-			<th>Sueldo Minimo:</th> 
+			<th>Sueldo Minimo::</th> 
 			<th>Valor UF:</th>
 			
 		</tr> 
 	</thead>
 	<tbody>
-		<td><input class="form-control miles" name="sueldominimo" id="sueldominimo" placeholder="Ingrese Sueldo Mínimo" value="270.000" data-fv-field="sueldominimo" autocomplete="off" type="text"></td>
+		<td><input class="form-control miles" name="sueldominimo" id="sueldominimo" placeholder="Ingrese Sueldo Mínimo"data-fv-field="sueldominimo" autocomplete="off" type="text"></td>
 		
-		<td><input class="form-control miles_decimales" name="uf" id="uf" placeholder="Ingrese Valor UF" value="26.604,10" data-fv-field="uf" autocomplete="off" type="text"></td>
+		<td><input class="form-control miles_decimales" name="uf" id="uf" placeholder="Ingrese Valor UF" data-fv-field="uf" autocomplete="off" type="text"></td>
 			
 	</tbody>
 
@@ -249,9 +287,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</tr> 
 	</thead>
 	<tbody>
-		<td><input class="form-control miles_decimales" name="topeimponible" id="topeimponible" placeholder="Ingrese Tope Imponible" value="75,70" autocomplete="off" type="text"></td>
+		<td><input class="form-control miles_decimales" name="topeimponible" id="topeimponible" placeholder="Ingrese Tope Imponible"  autocomplete="off" type="text"></td>
 
-		<td><input class="form-control" name="tasasis" id="tasasis" placeholder="Ingrese Valor SIS" value="1.41" data-fv-field="tasasis" type="text"></td>
+		<td><input class="form-control" name="tasasis" id="tasasis" placeholder="Ingrese Valor SIS" data-fv-field="tasasis" type="text"></td>
 			
 	</tbody>
 </table>
@@ -350,124 +388,40 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<!--/sidebar-menu-->
 				<div class="sidebar-menu">
 					<header class="logo">
-					<a href="#" class="sidebar-icon"> <span class="fa fa-bars"></span> </a> <a href="inicio.html"> <span id="logo"> <h1>IS  RRHH</h1></span> 
+					<a href="#" class="sidebar-icon"> <span class="fa fa-bars"></span> </a> <a href="configuraciones.html"> <span id="logo"> <h1>Configuración</h1></span> 
 					<!--<img id="logo" src="" alt="Logo"/>--> 
 				  </a> 
 				</header>
 			<div style="border-top:1px solid rgba(69, 74, 84, 0.7)"></div>
-			<!--/down-->
-			<div class="down">	
-						<p>Nombre de la Empresa</p>
-						<ul>
-							<li><a class="tooltips" href="inicio.html"><span>Salir</span><i class="lnr lnr-power-switch"></i></a></li>
-						</ul>
-					</div>
-			<!--//down-->
-                            <div class="menu">
+			
+                           <div class="menu">
 									<ul id="menu" >
-										<li><a href="inicio.html"><i class="fa fa-tachometer"></i> <span>Menú</span></a></li>
+										<li><a href="configuraciones.html"><i class="fa fa-tachometer"></i> <span>Menú</span></a></li>
 
-										 <li id="menu-academico" ><a href="#"><i class="fa fa-table"></i> <span>Recursos Humanos</span> <span class="fa fa-angle-right" style="float: right"></span></a>
+										 <li id="menu-academico" ><a href="#"> <span>Configuración Mensual</span> <span class="fa fa-angle-right" style="float: right"></span></a>
 										   <ul id="menu-academico-sub" >
-											<li id="menu-academico-avaliacoes" ><a href="colaborador.html"> Mantencion Personal</a></li>
-											<li id="menu-academico-boletim" ><a href="#">Contratos</a>
-												<ul id="menu-mensagens-sub" >
-													<li id="menu-mensagens-enviadas" style="width:200px" ><a href="facturacion.html">Individuales</a></li>
-													<li id="menu-mensagens-recebidas"  style="width:200px"><a href="#">Masivos</a></li>
-														
-                                                </ul>
-											</li>
-											<li id="menu-academico-avaliacoes" ><a href="#">Finiquitos</a>
-												<ul id="menu-mensagens-sub" >
-													<li id="menu-mensagens-enviadas" style="width:200px" ><a href="facturacion.html">Individuales</a></li>
-													<li id="menu-mensagens-recebidas"  style="width:200px"><a href="#">Masivos</a></li>
-														
-                                                </ul>
-											</li>
-											<li id="menu-academico-avaliacoes" ><a href="#">Personal Termino Contrato</a></li>
+											<li id="menu-academico-avaliacoes" ><a href="#" data-toggle="modal" data-target="#myModal13"> Parámetros</a></li>
+											<li id="menu-academico-boletim" ><a href="afp.html">AFP</a></li>
+											<li id="menu-academico-avaliacoes" ><a href="isapre.html">Isapre</a></li>
+											<li id="menu-academico-avaliacoes" ><a href="#">Otros Aportes</a></li>
 											
 										  </ul>
 										</li>
-										 <li id="menu-academico" ><a href="#"><i class="fa fa-file-text-o"></i> <span>Remuneraciones</span> <span class="fa fa-angle-right" style="float: right"></span></a>
+										 <li id="menu-academico" ><a href="#"> <span>Configuración General</span> <span class="fa fa-angle-right" style="float: right"></span></a>
 				                 		      <ul id="menu-academico-sub" >
-								               <li id="menu-academico-boletim" ><a href="#">Ingresos Masivos</a>
-								                   <ul id="menu-academico-sub" >
-														<li id="menu-mensagens-enviadas" style="width:210px" ><a href="#" data-toggle="modal" data-target="#myModal14">Carga Masiva Hab/Des</a></li>
-														<li id="menu-mensagens-recebidas"  style="width:210px"><a href="#">Ingreso Masivo de Campos</a></li>
-														<li id="menu-mensagens-recebidas"  style="width:210px"><a href="#">Ingreso Segun plantilla</a></li>
-														<li id="menu-mensagens-recebidas"  style="width:210px"><a href="#">Mantencion de Plantillas</a></li>
-										  			</ul>
-                                                </li>
-												<li id="menu-academico-boletim" ><a href="#">Control de Asistencia</a></li>
-												<li id="menu-academico-boletim" ><a href="#">Horas Extraordinarias</a></li>
-												<li id="menu-academico-boletim" ><a href="#">Generacion de Anticipos</a></li>
-
-												<li id="menu-academico-boletim" ><a href="creacion_hab_des.html">Registro Hab/Desc Variables</a></li>
-												<li id="menu-academico-boletim" ><a href="#">Movimiento del Personal</a></li>
-                                                <li id="menu-academico-boletim" ><a href="#">Calculo de Remuneraciones</a></li>
-												<li id="menu-academico-boletim" ><a href="#">Detalle de Remuneraciones</a></li>
-
+								               	<li id="menu-academico-boletim" ><a href="impuesto_unico.html">Impuesto Único</a></li>
+												<li id="menu-academico-boletim" ><a href="#">Fáctores de Actualización</a></li>
 											  </ul>
 										 </li>
 
-										 <li id="menu-comunicacao" ><a href="#"><i class="fa fa-book"></i> <span>Reportes y Consultas</span><span class="fa fa-angle-right" style="float: right"></span></a>
+										<li id="menu-comunicacao" ><a href="#"> <span>Otras configuraciones</span><span class="fa fa-angle-right" style="float: right"></span></a>
 									  		<ul id="menu-comunicacao-sub" >
-												<li id="menu-mensagens" style="width:200px" ><a href="#">Reportes Legales</a></li>
-												<li id="menu-mensagens" style="width:200px" ><a href="#">Otros Reportes</a></li>
-												<li id="menu-mensagens" style="width:200px" ><a href="#">Procesos Anuales</a>
-													<ul id="menu-mensagens-sub" >
-														<li id="menu-mensagens-enviadas" style="width:200px" ><a href="facturacion.html">Declaración Jurada 1887</a></li>
-                                                    </ul>
-												</li>
-		
+												<li id="menu-mensagens" style="width:190px" ><a href="feriados.html">Feriados</a></li>
+												<li id="menu-mensagens" style="width:190px" ><a href="#">Clases</a></li>
 									  		</ul>
-										</li>
-
-										<li id="menu-comunicacao" ><a href="#"><i class="fa fa-list"></i> <span>Opc. de Configuracion</span><span class="fa fa-angle-right" style="float: right"></span></a>
-									  		<ul id="menu-comunicacao-sub" >
-												<li id="menu-mensagens" style="width:200px" ><a href="#" data-toggle="modal" data-target="#myModal13">Parámetros Mensuales</a></li>
-												<li id="menu-mensagens" style="width:200px" ><a href="#">Otros Aportes</a></li>
-												<li id="menu-mensagens" style="width:200px" ><a href="impuesto_unico.html">Impuesto Único</a></li>
-												<li id="menu-mensagens" style="width:200px" ><a href="creacion_hab_des.html">Creación de Hab/Des</a></li>
-												<li id="menu-mensagens" style="width:200px" ><a href="#">Fáctores de Actualización</a></li>
-												<li id="menu-mensagens" style="width:200px" ><a href="#">Feriados</a></li>
-												<li id="menu-mensagens" style="width:200px" ><a href="#">Cuentas Centralización</a></li>
-									  		</ul>
-										</li>
-
-                                     <li id="menu-comunicacao" ><a href="#"><i class="fa fa-list"></i> <span>Procesos Mensuales</span><span class="fa fa-angle-right" style="float: right"></span></a>
-                                        <ul>
-											<li><a href="#"> Centralizacion Mensual</a></li>
-						           			<li><a href="#"> Cierre Mensual</a></li>
-						           			<li id="menu-academico-boletim" ><a href="#">Transferencia a Bancos y Otros</a>
-                                                <ul id="menu-mensagens-sub" >
-													<li id="menu-mensagens-enviadas" style="width:200px" ><a href="facturacion.html">Traspaso a Bancos</a></li>
-													<li id="menu-mensagens-recebidas"  style="width:200px"><a href="#">Previred</a></li>
-													<li id="menu-mensagens-recebidas"  style="width:200px"><a href="#">Emisión de Cheques</a></li>
-                                                </ul> 
-                                            </li>
-									 	</ul>
-
-
-                                     </li>
-									
-									 <li><a href="#"><i class="fa fa-folder" aria-hidden="true"></i><span>Aux. Remuneraciones</span><span class="fa fa-angle-right" style="float: right"></span></a>
-									   	<ul>
-											<li><a href="#" data-toggle="modal" data-target="#myModal5"> Control de Vacaciones</a></li>
-											<li><a href="#" data-toggle="modal" data-target="#myModal10"> Licencias Medicas</a></li>
-											
-									  	</ul>
 									</li>
-
-									<li id="menu-academico" ><a href="#"><i class="fa fa-user"></i> <span>Seguridad</span> <span class="fa fa-angle-right" style="float: right"></span></a>
-										  <ul id="menu-academico-sub" >
-										    <li id="menu-academico-avaliacoes" ><a href="#">Usuarios</a></li>
-										    <li id="menu-academico-boletim" ><a href="#">Roles</a></li>
-										    <li id="menu-academico-boletim" ><a href="#">Bitacora</a></li>
-											
-										  </ul>
-									 </li>	
-								</ul>
+	
+								</ul>s
 								</div>
 							  </div>
 							  <div class="clearfix"></div>		
