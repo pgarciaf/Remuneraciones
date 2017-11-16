@@ -103,7 +103,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									  <div class="sub-heard-part">
 									   <ol class="breadcrumb m-b-0">
 											<li><a href="inicio.html">Inicio</a></li>
-											<li class="active">Ingreso AFP</li>
+											<li class="active">Asignación Familiar</li>
 											
 										</ol>
 									   </div>
@@ -111,7 +111,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								
 									<div class="graph-visual tables-main">
 											
-													<h3 class="inner-tittle two">Tabla de Ingreso de AFP <button type="button" class="btn btn-primary btn-flat btn-pri" data-toggle="modal" data-target="#myModal_AFP"><i class="fa fa-plus" aria-hidden="true"></i> Nuevo Ingreso</button></h3>
+													<h3 class="inner-tittle two">Tabla de Asignación Familiar</h3>
 
 													
 														  <div class="graph">
@@ -122,35 +122,27 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 																	<thead> 
 																		<tr>
 																			<th></th>
-																			<th>Nombre de AFP:</th> 
-																			<th>Porcentaje:</th> 
-																			<th>Ex Régimen</th> 
-																			<th>Opciones</th> 
-																			
-
+																			<th>Desde ($)</th> 
+																			<th>Hasta ($)</th> 
+																			<th>Monto Asignación Familiar</th> 
 																		</tr> 
 																	</thead> 
 																	<tbody> 
 																		<tr class="active" id="variable">
 																			<td>1</td>
 
-																			<td>Capital</td> 
+																			<td><input type="text" name="caja" class="form-control" id="desde" placeholder="0"></td> 
 
-																			<td>11.14%</td>
+																			<td><input type="text" name="hasta" class="form-control" id="hasta" placeholder="0"></td>
 
-																			<td>NO</td>
-
-																			<td>
-																				<button type="button" class="btn btn-info" id="opciones" title="Editar"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
-        																		
-        																		<button type="button" class="btn btn-danger" id="opciones" title="Eliminar" data-toggle="modal" data-target="#myModal_Eliminar"><i class="fa fa-times" aria-hidden="true"></i></button>
-																			</td> 
+																			<td><input type="text" name="factor" class="form-control" id="factor" placeholder="0,000"></td>
 																			
 																		</tr> 
 																		
 																	</tbody> 
 																</table> 
-																
+																<br>
+																<a href="#" class="btn btn-info">Guardar</a>
 															</div>
 												
 													</div>
@@ -165,50 +157,33 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</div>
 				<!--//content-inner-->
 
-<!-- //Modal ingresar AFP -->
-<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" id="myModal_AFP">
+<!-- //Modal apertura de caja -->
+<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" id="myModal1">
   <div class="modal-dialog modal-sm" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="exampleModalLabel">Ingreso de AFP</h4>
+        <h4 class="modal-title" id="exampleModalLabel">Apertura de Caja</h4>
       </div>
 
       <div class="modal-body">
-      	<input type="text" name="nombre_afp" class="form-control" id="nombre_afp" placeholder="Nombre de AFP:">
+      	<input type="text" name="caja" class="form-control" id="caja" placeholder="Caja:">
       	<br>
-      	<input type="text" name="porcentaje" class="form-control" id="porcentaje" placeholder="Porcentaje:">
+      	<input type="text" name="cajero" class="form-control" id="cajero" placeholder="Cajero:">
       	<br>
-		<div class="checkbox-inline"><label><input type="checkbox"> Ex-Régimen</label></div>
+		<input type="text" name="efectivo" class="form-control" id="efectivo" placeholder="Efectivo:">
 		<br>
+		<input type="text" name="cheque" class="form-control" id="cheque" placeholder="Cheques:">
 		<br>
-		<button type = "button" class = "btn btn-info" id="comando">Ingresar</button>
-		<button type = "button" class = "btn btn-danger" data-dismiss="modal"  id="comando">Cancelar</button>
+		<input type="text" name="otros" class="form-control" id="otros" placeholder="Otros:">
+		<br>
+		<button type = "button" class = "btn btn-primary" id="comando">Ingresar</button>
+		<button type = "button" class = "btn btn-primary" data-dismiss="modal"  id="comando">Cancelar</button>
       </div>
     </div>
   </div>
 </div>
-<!-- //Modal ingresar AFP -->
-
-<!-- //Modal Eliminar -->
-<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" id="myModal_Eliminar">
-  <div class="modal-dialog modal-sm" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="exampleModalLabel">Eliminar</h4>
-      </div>
-
-      <div class="modal-body">
-      	<h4 class="modal-body">¿Deseas Eliminar?</h4>
-      	<br>
-      	<a href="#" type="button" class="btn btn-info"><span><i class="fa fa-trash-o" aria-hidden="true"></i></span> Eliminar</a>
-      	<a href="#" type="button" class="btn btn-danger" data-dismiss="modal"><span><i class="fa fa-times" aria-hidden="true"></i></span> Cancelar</a>		
-      </div>
-    </div>
-  </div>
-</div>
-<!-- //Modal Eliminar -->
+<!-- //Modal apertura de caja -->
 
 <!-- //Modal certificado -->
 <div class="modal fade bs-example-modal-md" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" id="myModal2">
@@ -401,6 +376,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									  		<ul id="menu-comunicacao-sub" >
 												<li id="menu-mensagens" style="width:190px" ><a href="feriados.html">Feriados</a></li>
 												<li id="menu-mensagens" style="width:190px" ><a href="#">Clases</a></li>
+
 									  		</ul>
 									</li>
 	
