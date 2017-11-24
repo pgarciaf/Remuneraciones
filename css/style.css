@@ -2902,10 +2902,8 @@ ul#menu-comunicacao-sub {
 }
 /*--/404--*/
 .error_page {
-       background: #00C6D7;
-    position: relative;
-    padding: 11em 0;
-    width: 100%
+    padding: 9em 0;
+    width: 90%
 }
 .error-top {
    text-align: center;

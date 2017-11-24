@@ -123,7 +123,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									  <div class="sub-heard-part">
 									   <ol class="breadcrumb m-b-0">
 											<li><a href="inicio.html">Inicio</a></li>
-											<li class="active">Control de Asistencia</li>
+											<li class="active">Usuarios</li>
 											
 										</ol>
 									   </div>
@@ -131,7 +131,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								
 									<div class="graph-visual tables-main">
 											
-													<h3 class="inner-tittle two">Tabla de Control de Asistencia <button type="button" class="btn btn-primary btn-flat btn-pri btn-lg" data-toggle="modal" data-target="#myModal1"><i class="fa fa-plus" aria-hidden="true"></i>Nuevo Período</button></h3>
+													<h3 class="inner-tittle two">Usuarios <a href="#" type="button" class="btn btn-primary btn-flat btn-pri btn-lg" data-toggle="collapse" data-target="#registro"><i class="fa fa-plus" aria-hidden="true"></i> Nuevo Usuario</a></h3>
 
 													
 														  <div class="graph">
@@ -141,36 +141,67 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 																<table class="table"> 
 																	<thead> 
 																		<tr>
-																			<th>#</th>
 																			<th>Rut:</th> 
-																			<th>Nombre Trabajador:</th> 
-																			<th>Días a Trabajar:</th> 
-																			<th>Días Trabajados:</th> 
+																			<th>Nombre Completo:</th> 
+																			<th>Email:</th>
+																			<th>Usuario:</th>
+																			<th>Estado:</th>
+																			<th>Opciones:</th> 
 																			
 
 																		</tr> 
 																	</thead> 
 																	<tbody> 
 																		<tr class="active" id="variable">
-																			<td>1</td>
+																			<td>25.523.235-7</td>
 
-																			<td><input type="text" name="caja" class="form-control" id="desde" placeholder="95.236.254-4"></td> 
+																			<td>María Rodriguez</td> 
 
-																			<td><input type="text" name="hasta" class="form-control" id="hasta" placeholder="Jose Malave"></td>
+																			<td>mariarodriguez2@gmail.com</td>
 
-																			<td><input type="text" name="factor" class="form-control" id="factor" placeholder="30"></td>
+																			<td>mrodriguez</td>
+																			
+																			<td>Activo</td>
 
-																			<td><input type="text" name="rebajas" class="form-control" id="rebajas" placeholder="30"></td> 
+																			<td>
+																				<button type="button" class="btn btn-info opciones" id="opciones" title="Editar"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+        																		
+        																		<button type="button" class="btn btn-danger" id="opciones" title="Eliminar" data-toggle="modal" data-target="#myModalElim"><i class="fa fa-times" aria-hidden="true"></i></button>
+																			</td> 
 																			
 																		</tr> 
 																		
 																	</tbody> 
 																</table> 
-																<br>
-																<a href="#" class="btn btn-info">Guardar</a>
 															</div>
-												
 													</div>
+
+													<div class="collapse" id="registro">
+																<div class="error_page" id="registro">
+																	<div class="error-top">
+																		<div class="login">
+																			<h3 class="inner-tittle t-inner">Regístrate</h3>
+				
+																			<form action="#" method="POST">
+																				
+																				<input type="text" class="form-control" placeholder="Email">
+
+																				<input type="password" class="form-control" placeholder="Password">
+
+																				<input type="password" class="form-control" placeholder="Confirmar Password">
+
+																				<div class="sign-up">
+																					<input type="reset" value="Cerrar" data-toggle="collapse" data-target="#registro">
+
+																					<input type="submit" onclick="myFunction()" value="Registrar">
+																			
+																				</div>
+																				<div class="clearfix"></div>
+																			</form>
+																		</div>
+																	</div>
+																</div>
+															</div>
 													
 											</div>
 									<!--/charts-inner-->
@@ -181,6 +212,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 							</div>
 				<!--//content-inner-->
+
+				<script>
+								$('#seccion').collapse({
+  									toggle: false
+								})
+							</script>
 
 <!-- //Modal apertura de caja -->
 <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" id="myModal1">
