@@ -55,35 +55,54 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									</script>
 							<!--/profile_details-->
 								<div class="profile_details_left">
-									<ul class="nofitications-dropdown">
-											
+							<ul class="nofitications-dropdown">
+								<li class="dropdown note">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-user" aria-hidden="true"></i> <span class="badge"></span></a>
 									
-											
-						<li class="dropdown note">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-power-off"></i> <span class="badge"></span></a>
-								<ul class="dropdown-menu two first">
-									<li>
-										<div class="notification_header">
-											<h3>Cerrar Sesión</h3> 
-										</div>
-									</li>
-									<li>
-										<a href="#">
-											<div class="user_img">
-												<img src="images/cerrar.png" alt="cerrar">
+									<ul class="dropdown-menu two first">
+										<li>
+											<div class="notification_header">
+												<h3>Administrador </h3> 
 											</div>
-											<div class="notification_desc">
+										</li>
+										
+										<li>
+											<a href="#">
+												<div class="user_img"><img src="images/1.jpg" alt=""></div>
+												<div class="notification_desc">
+													<p>María José Rodr</p>
+													<p><span>Jefe de Departamento</span></p>
+												</div>
+												<div class="clearfix"></div>	
+											</a>
+										</li>
+									</ul>
+								</li>
+
+								<li class="dropdown note">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-power-off" aria-hidden="true"></i> <span class="badge"></span></a>
+									<ul class="dropdown-menu two first">
+										<li>
+											<div class="notification_header">
+												<h3>Cerrar Sesión</h3> 
+											</div>
+										</li>
+										<li>
+											<a href="index.html">
+												<div class="user_img">
+													<img src="images/cerrar.png" alt="cerrar">
+												</div>
+												<div class="notification_desc">
 												
-												<p><span>Cerrar Sesión</span></p>
-											</div>
-											<div class="clearfix"></div>	
-										</a>
-									</li>
-								</ul>
-							</li>		   							   		
-							<div class="clearfix"></div>	
-								</ul>
-							</div>
+													<p><span>Cerrar Sesión</span></p>
+												</div>
+												<div class="clearfix"></div>	
+											</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
 							<div class="clearfix"></div>	
 							<!--//profile_details-->
 						</div>
@@ -97,36 +116,43 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									  <div class="sub-heard-part">
 									   <ol class="breadcrumb m-b-0">
 											<li><a href="inicio.html">Inicio</a></li>
-											<li class="active">Movimiento del Personal</li>
+											<li class="active">Vacaciones</li>
 										</ol>
 									   </div>
 								  <!--//sub-heard-part-->
 								
 									<div class="graph-visual tables-main">
-										<h3 class="inner-tittle two">Movimiento del Personal </h3>
+										<h3 class="inner-tittle two">Vacaciones</h3>
 
 										<div class="graph">
 											<div class="tables">
 												<table class="table"> 
 													<thead> 
 														<tr>
-															<th>#</th>
 															<th>Rut:</th> 
 															<th>Nombre Trabajador:</th> 
-															<th></th> 
+															<th>Legales</th>
+															<th>Progresivos</th>
+															<th>Opciones</th> 
 														</tr> 
 													</thead> 
 													<tbody> 
 														<tr class="active" id="variable">
-															<td>1</td>
 
-															<td><input type="text" name="caja" class="form-control" id="desde" placeholder="95.236.254-4"></td> 
+															<td></td> 
 
-															<td><input type="text" name="hasta" class="form-control" id="hasta" placeholder="Jose Malave"></td>
+															<td></td>
+
+															<td></td>
+
+															<td></td>
 
 															<td>
-																<button type="button" class="btn btn-info" id="opciones" title="Ver" data-toggle="collapse" data-target="#seccion"><i class="fa fa-eye" aria-hidden="true"></i>
-																</button>
+																<button type="button" class="btn btn-info" id="opciones" title="Solicitar" data-toggle="modal" data-target="#myModal12"><i class="fa fa-suitcase" aria-hidden="true"></i></button>
+
+																<button type="button" class="btn btn-success" id="opciones" title="Cartola" data-toggle="collapse" data-target="#seccion"><i class="fa fa-calendar" aria-hidden="true"></i></button>
+
+																<button type="button" class="btn btn-success" id="opciones" title="Agregar Días Progresivos" data-toggle="collapse" data-target="#seccion1"><i class="fa fa-plus" aria-hidden="true"></i></button>
 															</td> 
 														</tr> 
 													</tbody> 
@@ -136,32 +162,144 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 													
 										<div class="collapse" id="seccion">
 											<div class="well">
-												<h4>Nombre Completo</h4>
+												<h4>Información Trabajador</h4>
 												<table class="table table-striped">
 													<thead> 
 														<tr> 
-															<th>Tipo Movimiento:</th> 
-															<th>Fecha Desde:</th>
-															<th>Fecha Hasta:</th>
-															<th>Comentrio:</th>
-															<th>Acción:</th>
+															<th>Nombre:</th> 
+															<th>Fecha Ingreso:</th>
+															<th>Fecha Inicio Calculo:</th>
+															
 																		
 														</tr> 
 													</thead>
 													<tbody>
-														<h5>No Existe Moviento del Trabajador</h5>
+														<td></td>
+														<td></td>
+														<td></td>
+														
+													</tbody>
+												</table>
+												<br>
+												<h4>Detalles de Vacaciones</h4>
+												<table class="table table-striped">
+													<thead> 
+														<tr> 
+															<th>Fecha Inicio:</th> 
+															<th>Fecha Regreso:</th>
+															<th>Días Legales:</th>
+															<th>Días Progresivos:</th>
+															<th>Total Días:</th>			
+														</tr> 
+													</thead>
+													<tbody>
 														<td></td>
 														<td></td>
 														<td></td>
 														<td></td>
 														<td></td>
+														
+													</tbody>
+												</table>
+												<br>
+												<h4>Vacaciones Progresivas Autorizadas</h4>
+												<table class="table table-striped">
+													<thead> 
+														<tr> 
+															<th>Período:</th> 
+															<th>Días:</th>
+															<th>Acción:</th>			
+														</tr> 
+													</thead>
+													<tbody>
+														<td></td>
+														<td></td>
+														<td></td>	
+													</tbody>
+												</table>
+												<br>
+												<h4>Vacaciones Solicitadas</h4>
+												<table class="table table-striped">
+													<thead> 
+														<tr> 
+															<th>Fecha Inicio:</th> 
+															<th>Fecha Regreso:</th>
+															<th>Días:</th>
+															<th>Comentario:</th>
+															<th>Opciones:</th>			
+														</tr> 
+													</thead>
+													<tbody>
+														<td></td>
+
+														<td></td>
+
+														<td></td>
+
+														<td></td>
+
+														<td>
+															<button type="button" class="btn btn-info opciones" id="opciones" title="Editar"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+        																		
+        													<button type="button" class="btn btn-danger" id="opciones" title="Eliminar" data-toggle="modal" data-target="#myModalElim"><i class="fa fa-times" aria-hidden="true"></i></button>
+														</td>
+														
+													</tbody>
+												</table>			
+												<br>
+												
+												<button type = "button" class = "btn btn-danger" data-toggle="collapse" data-target="#seccion"  id="comando">X Cerrar</button>
+											</div>
+										</div>
+
+										<div class="collapse" id="seccion1">
+											<div class="well">
+												<h4>Información Trabajador</h4>
+												<table class="table table-striped">
+													<thead> 
+														<tr> 
+															<th>Nombre:</th> 
+															<th>Fecha Ingreso:</th>
+															<th>Fecha Inicio Calculo:</th>
+															
+																		
+														</tr> 
+													</thead>
+													<tbody>
+														<td></td>
+														<td></td>
+														<td></td>
+														
+													</tbody>
+												</table>
+
+												<h4>Días Progresivos</h4>
+												<table class="table table-striped">
+													<thead> 
+														<tr> 
+															<th>Período:</th> 
+															<th>Días Solicitados:</th>		
+														</tr> 
+													</thead>
+													<tbody>
+														<td>
+															<select name="selector1" id="selector1" class="form-control1">
+																<option>Seleccione</option>
+																<option>Enero</option>
+																<option>Febrero</option>
+																<option>Marzo</option>
+															</select>
+														</td>
+														<td>
+															<input type="text" name="dias" class="form-control" placeholder="Días Solicitados">
+														</td>
 													</tbody>
 												</table>
 															
 												<br>
-												<button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal11"><i class="fa fa-plus" aria-hidden="true"></i> Nuevo Movimiento</button>
+												<button type = "button" class = "btn btn-info" id="comando">Agregar</button>
 
-												<button type = "button" class = "btn btn-danger" data-toggle="collapse" data-target="#seccion"  id="comando">Cancelar</button>
+												<button type = "button" class = "btn btn-danger" data-toggle="collapse" data-target="#seccion1"  id="comando">X Cerrar</button>
 											</div>
 										</div>
 									</div>
@@ -275,25 +413,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="exampleModalLabel">Vacaciones</h4>
+        <h4 class="modal-title" id="exampleModalLabel">Solicitar Vacaciones</h4>
       </div>
 
       <div class="modal-body">
       	<input placeholder="Fecha" class="form-control" id="datepicker7" type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required=""/>
       	<br>
-      	<select name="selector1" id="selector1" class="form-control1">
-				<option>Form Vacaciones</option>
-				<option>Dolore, ab unde modi est!</option>
-				<option>Illum, fuga minus sit eaque.</option>
-				<option>Consequatur ducimus maiores voluptatum minima.</option>
-		</select>
+      	<input type="text" name="dias" class="form-control" placeholder="Días Solicitados">
 		<br>
-		<input type="text" name="dias" class="form-control" id="dias" placeholder="Días Base">
+		<textarea class="form-control" placeholder="Comentario:"></textarea>
 		<br>
 		
 
-		<button type = "button" class = "btn btn-info" id="comando">Ingresar</button>
-		<button type = "button" class = "btn btn-danger" data-dismiss="modal"  id="comando">Cancelar</button>
+		<button type = "button" class = "btn btn-info" id="comando">Solicitar</button>
+		<button type = "button" class = "btn btn-danger" data-dismiss="modal"  id="comando">Volver</button>
       </div>
     </div>
   </div>
@@ -558,8 +691,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 												<li id="menu-academico-boletim" ><a href="registro_hab_des.html">Registro Hab/Desc Variables</a></li>
 												<li id="menu-academico-boletim" ><a href="movimiento_persona.html">Movimiento del Personal</a></li>
-                                                <li id="menu-academico-boletim" ><a href="#">Calculo de Remuneraciones</a></li>
-												<li id="menu-academico-boletim" ><a href="#">Detalle de Remuneraciones</a></li>
+                                                <li id="menu-academico-boletim" ><a href="calculo_remuneraciones.html">Calculo de Remuneraciones</a></li>
+												<li id="menu-academico-boletim" ><a href="detalles.html">Detalle de Remuneraciones</a></li>
 
 											  </ul>
 										 </li>
@@ -607,7 +740,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									
 									 <li><a href="#"><i class="fa fa-folder" aria-hidden="true"></i><span>Aux. Remuneraciones</span><span class="fa fa-angle-right" style="float: right"></span></a>
 									   	<ul>
-											<li><a href="#" data-toggle="modal" data-target="#myModal5"> Control de Vacaciones</a></li>
+											<li><a href="vacaciones.html"> Control de Vacaciones</a></li>
 											<li><a href="#" data-toggle="modal" data-target="#myModal10"> Licencias Medicas</a></li>
 											
 									  	</ul>
