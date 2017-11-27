@@ -36,19 +36,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="top_menu">
 						        <div class="main-search">
 											<form>
-											   <input type="text" value="Search" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Buscar';}" class="text"/>
+											   <input type="text" value="Buscar" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Buscar';}" class="text"/>
 												<input type="submit" value=""/>
 											</form>
 									<div class="close"><img src="images/cross.png" /></div>
 								</div>
 									<div class="srch"><button></button></div>
 									<script type="text/javascript">
-										 $('.main-search').hide();
+										$('.main-search').hide();
 										$('button').click(function (){
 											$('.main-search').show();
 											$('.main-search text').focus();
-										}
-										);
+										});
 										$('.close').click(function(){
 											$('.main-search').hide();
 										});
@@ -145,7 +144,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 															<td></td>
 
 															<td>
-																<button type="button" class="btn btn-info" id="opciones" title="Ver" data-toggle="collapse" data-target="#"><i class="fa fa-eye" aria-hidden="true"></i>
+																<button type="button" class="btn btn-info" id="opciones" title="Ver" data-toggle="collapse" data-target="#calculo"><i class="fa fa-eye" aria-hidden="true"></i>
 																</button>
 															</td> 
 														</tr> 
@@ -154,7 +153,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											</div>	
 										</div>
 													
-										<div class="collapse" id="seccion">
+										<div class="collapse" id="calculo">
 											<div class="well">
 												<h4>Nombre Completo</h4>
 												<table class="table table-striped">
@@ -181,7 +180,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 												<br>
 												<button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal11"><i class="fa fa-plus" aria-hidden="true"></i> Nuevo Movimiento</button>
 
-												<button type = "button" class = "btn btn-danger" data-toggle="collapse" data-target="#seccion"  id="comando"><i class="fa fa-backward" aria-hidden="true"></i> Volver</button>
+												<button type = "button" class = "btn btn-danger" data-toggle="collapse" data-target="#calculo"  id="comando"><i class="fa fa-backward" aria-hidden="true"></i> Volver</button>
 											</div>
 										</div>
 									</div>
