@@ -52,15 +52,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</div>
 						<div class="srch"><button></button></div>
 						<script type="text/javascript">
-										$('.main-search').hide();
-										$('button').click(function (){
-											$('.main-search').show();
-											$('.main-search text').focus();
-										});
-										$('.close').click(function(){
-											$('.main-search').hide();
-										});
-									</script>
+							$('.main-search').hide();
+							$('button').click(function (){
+								$('.main-search').show();
+								$('.main-search text').focus();
+							});
+							$('.close').click(function(){
+								$('.main-search').hide();
+							});
+						</script>
 
 						<div class="profile_details_left">
 							<ul class="nofitications-dropdown">
@@ -123,7 +123,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									  <div class="sub-heard-part">
 									   <ol class="breadcrumb m-b-0">
 											<li><a href="inicio.html">Inicio</a></li>
-											<li class="active">Impuesto Único</li>
+											<li class="active">Bitacora</li>
 											
 										</ol>
 									   </div>
@@ -131,7 +131,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								
 									<div class="graph-visual tables-main">
 											
-													<h3 class="inner-tittle two">Tabla de Impuesto Único</h3>
+													<h3 class="inner-tittle two">Bitacora</h3>
 
 													
 														  <div class="graph">
@@ -140,37 +140,82 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 															<div class="tables">
 																<table class="table"> 
 																	<thead> 
-																		<tr>
-																			<th></th>
-																			<th>Desde ($)</th> 
-																			<th>Hasta ($)</th> 
-																			<th>Factor</th> 
-																			<th>Rebajas ($)</th> 
+																		<tr> 
+																			<th>Nombre Completo:</th>
+																			<th>Actividad:</th> 
+																			<th>Fecha:</th>
+																			<th>Tabla:</th> 
 																			
 
 																		</tr> 
 																	</thead> 
 																	<tbody> 
 																		<tr class="active" id="variable">
-																			<td>1</td>
+																			<td>María Rodriguez</td>
 
-																			<td><input type="text" name="caja" class="form-control" id="desde" placeholder="0"></td> 
+																			<td>Insertar</td> 
 
-																			<td><input type="text" name="hasta" class="form-control" id="hasta" placeholder="0"></td>
+																			<td>21/11/2017</td>
 
-																			<td><input type="text" name="factor" class="form-control" id="factor" placeholder="0,000"></td>
-
-																			<td><input type="text" name="rebajas" class="form-control" id="rebajas" placeholder="0"></td> 
+																			<td>impuesto_unico</td> 
 																			
 																		</tr> 
 																		
 																	</tbody> 
 																</table> 
-																<br>
-																<a href="#" class="btn btn-info">Guardar</a>
 															</div>
-												
 													</div>
+
+												<div class="collapse" id="editar">
+													<div class="well">
+														<h4>Edición</h4>
+														<table class="table table-striped">
+															<thead> 
+																<tr> 
+																	<th>Nombre:</th> 
+																	<th>Apellido:</th>
+																	<th>Usuario:</th>
+																	<th>Contraseña:</th>			
+																</tr> 
+															</thead>
+															<tbody>
+																<td>Maria</td>
+																<td>Rodriguez</td>
+																<td>Administrador</td>
+																<td>*****</td>
+															</tbody>
+														</table>
+														<br>
+														<br>
+														<br>
+														<h4>Roles Asignados</h4>
+														<table class="table table-striped">
+															<thead> 
+																<tr> 
+																	<th>Nombre:</th> 
+																	<th>Habilitar:</th>			
+																</tr> 
+															</thead>
+															<tbody>
+																<td>Administrador</td>
+
+																<td>
+																	<div class="radio block">
+																		<label>
+																			<input class="form-check-input" type="checkbox" name="exampleRadios">
+																		</label>
+																	</div>
+																</td>
+															</tbody>
+														</table>
+															
+														<br>
+														
+														<a href="#" class="btn btn-info">Guardar</a>
+												
+														<button type = "button" class = "btn btn-danger" data-toggle="collapse" data-target="#editar"  id="comando">X Cerrar</button>
+													</div>
+												</div>
 													
 											</div>
 									<!--/charts-inner-->
@@ -182,33 +227,159 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</div>
 				<!--//content-inner-->
 
-<!-- //Modal apertura de caja -->
+							<script>
+								$('#seccion').collapse({
+  									toggle: false
+								})
+							</script>
+
+<!-- //Modal periodo -->
 <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" id="myModal1">
   <div class="modal-dialog modal-sm" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="exampleModalLabel">Apertura de Caja</h4>
+        <h4 class="modal-title" id="exampleModalLabel">Período</h4>
       </div>
 
       <div class="modal-body">
-      	<input type="text" name="caja" class="form-control" id="caja" placeholder="Caja:">
+      	<select name="selector1" id="selector1" class="form-control1">
+			<option>Meses.</option>
+			<option>Enero</option>
+			<option>Febrero</option>
+			<option>Marzo</option>
+		</select>
       	<br>
-      	<input type="text" name="cajero" class="form-control" id="cajero" placeholder="Cajero:">
-      	<br>
-		<input type="text" name="efectivo" class="form-control" id="efectivo" placeholder="Efectivo:">
+      	<select name="selector1" id="selector1" class="form-control1">
+			<option>Año.</option>
+			<option>2017</option>
+			<option>2018</option>
+			<option>2019</option>
+		</select>
 		<br>
-		<input type="text" name="cheque" class="form-control" id="cheque" placeholder="Cheques:">
-		<br>
-		<input type="text" name="otros" class="form-control" id="otros" placeholder="Otros:">
-		<br>
-		<button type = "button" class = "btn btn-primary" id="comando">Ingresar</button>
-		<button type = "button" class = "btn btn-primary" data-dismiss="modal"  id="comando">Cancelar</button>
+		<button type = "button" class = "btn btn-info" id="comando">Ingresar</button>
+		<button type = "button" class = "btn btn-danger" data-dismiss="modal"  id="comando">Cancelar</button>
       </div>
     </div>
   </div>
 </div>
-<!-- //Modal apertura de caja -->
+<!-- //Modal periodo-->
+
+<!-- //Modal agregar -->
+<div class="modal fade bs-example-modal-md" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" id="agregar">
+  <div class="modal-dialog modal-md" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="exampleModalLabel">Nuevo Usuario</h4>
+      </div>
+
+      <div class="modal-body">
+      	<table class="table">
+      		<thead>
+      			<tr>
+      				<th>Nombre:</th>
+      				<th>Apellido:</th>
+      			</tr>
+      		</thead>
+
+      		<tbody>
+      			<td>
+      				<input class="form-control miles" name="nombre" id="nombre" placeholder="Nombre" type="text">
+      			</td>
+
+      			<td>
+      				<input class="form-control miles" name="apellido" id="apellido" placeholder="Apellido" type="text">
+      			</td>
+
+      		</tbody>
+      	</table>
+
+      	<table class="table">
+      		<thead>
+      			<tr>
+      				<th>Usuario:</th>
+      				<th>Contraseña:</th>
+      			</tr>
+      		</thead>
+
+      		<tbody>
+      			<td>
+      				<input class="form-control miles" name="usuario" id="usuario" placeholder="Usuario" type="text">
+      			</td>
+
+      			<td>
+      				<input class="form-control miles" name="contrasena" id="contrasena" placeholder="Contraseña" type="password">
+      			</td>
+      		</tbody>
+      	</table>
+		<button type = "button" class = "btn btn-info" id="comando">Ingresar</button>
+		<button type = "button" class = "btn btn-danger" data-dismiss="modal"  id="comando">Cancelar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- //Modal agregar -->
+
+<!-- //Modal Eliminar -->
+<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" id="myModalElim">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="exampleModalLabel">Eliminar</h4>
+      </div>
+
+      <div class="modal-body">
+      	<h4 class="modal-body">¿Deseas Eliminar?</h4>
+      	<br>
+      	<a href="#" type="button" class="btn btn-info"><span><i class="fa fa-trash-o" aria-hidden="true"></i></span> Eliminar</a>
+      	<a href="#" type="button" class="btn btn-danger" data-dismiss="modal"><span><i class="fa fa-times" aria-hidden="true"></i></span> Cancelar</a>		
+      </div>
+    </div>
+  </div>
+</div>
+<!-- //Modal Eliminar -->
+
+<!-- //Modal Habilitar -->
+<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" id="myModalHabi">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="exampleModalLabel">Habilitar</h4>
+      </div>
+
+      <div class="modal-body">
+      	<h4 class="modal-body">¿Deseas Habilitar?</h4>
+      	<br>
+      	<a href="#" type="button" class="btn btn-info"><span><i class="fa fa-check" aria-hidden="true"></i></span> Habilitar</a>
+      	<a href="#" type="button" class="btn btn-danger" data-dismiss="modal"><span><i class="fa fa-times" aria-hidden="true"></i></span> Cancelar</a>		
+      </div>
+    </div>
+  </div>
+</div>
+<!-- //Modal Habilitar -->
+
+<!-- //Modal Desabilitar -->
+<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" id="myModalDesa">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="exampleModalLabel">Desabilitar</h4>
+      </div>
+
+      <div class="modal-body">
+      	<h4 class="modal-body">¿Deseas Desabilidar?</h4>
+      	<br>
+      	<a href="#" type="button" class="btn btn-info"><span><i class="fa fa-trash-o" aria-hidden="true"></i></span> Desabilitar</a>
+      	<a href="#" type="button" class="btn btn-danger" data-dismiss="modal"><span><i class="fa fa-times" aria-hidden="true"></i></span> Cerrar</a>		
+      </div>
+    </div>
+  </div>
+</div>
+<!-- //Modal Desabilitar -->
 
 <!-- //Modal certificado -->
 <div class="modal fade bs-example-modal-md" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" id="myModal2">

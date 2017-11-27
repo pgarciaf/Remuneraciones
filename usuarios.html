@@ -131,7 +131,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								
 									<div class="graph-visual tables-main">
 											
-													<h3 class="inner-tittle two">Usuarios <a href="#" type="button" class="btn btn-primary btn-flat btn-pri btn-lg" data-toggle="collapse" data-target="#registro"><i class="fa fa-plus" aria-hidden="true"></i> Nuevo Usuario</a></h3>
+													<h3 class="inner-tittle two">Usuarios <a href="#" type="button" class="btn btn-primary btn-flat btn-pri btn-lg" data-toggle="modal" data-target="#agregar"><i class="fa fa-plus" aria-hidden="true"></i> Nuevo Usuario</a></h3>
 
 													
 														  <div class="graph">
@@ -140,11 +140,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 															<div class="tables">
 																<table class="table"> 
 																	<thead> 
-																		<tr>
-																			<th>Rut:</th> 
-																			<th>Nombre Completo:</th> 
-																			<th>Email:</th>
+																		<tr> 
 																			<th>Usuario:</th>
+																			<th>Nombre Completo:</th> 
 																			<th>Estado:</th>
 																			<th>Opciones:</th> 
 																			
@@ -153,19 +151,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 																	</thead> 
 																	<tbody> 
 																		<tr class="active" id="variable">
-																			<td>25.523.235-7</td>
+																			<td>administrador</td>
 
 																			<td>María Rodriguez</td> 
 
-																			<td>mariarodriguez2@gmail.com</td>
-
-																			<td>mrodriguez</td>
-																			
 																			<td>Activo</td>
 
 																			<td>
-																				<button type="button" class="btn btn-info opciones" id="opciones" title="Editar"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+																				<button type="button" class="btn btn-info opciones" id="opciones" title="Editar" data-toggle="collapse" data-target="#editar"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
         																		
+        																		<button type="button" class="btn btn-success" id="opciones" title="Habilitar" data-toggle="modal" data-target="#myModalHabi"><i class="fa fa-check" aria-hidden="true"></i></button>
+
+        																		<button type="button" class="btn btn-primary" id="opciones" title="Desabilitar" data-toggle="modal" data-target="#myModalDesa"><i class="fa fa-info" aria-hidden="true"></i></button>
+
         																		<button type="button" class="btn btn-danger" id="opciones" title="Eliminar" data-toggle="modal" data-target="#myModalElim"><i class="fa fa-times" aria-hidden="true"></i></button>
 																			</td> 
 																			
@@ -176,32 +174,51 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 															</div>
 													</div>
 
-													<div class="collapse" id="registro">
-																<div class="error_page" id="registro">
-																	<div class="error-top">
-																		<div class="login">
-																			<h3 class="inner-tittle t-inner">Regístrate</h3>
-				
-																			<form action="#" method="POST">
-																				
-																				<input type="text" class="form-control" placeholder="Email">
+												<div class="collapse" id="editar">
+													<div class="well">
+														<h4>Edición</h4>
+														<table class="table table-striped">
+															<thead> 
+																<tr> 
+																	<th>Nombre:</th> 
+																	<th>Apellido:</th>
+																	<th>Usuario:</th>
+																	<th>Contraseña:</th>			
+																</tr> 
+															</thead>
+															<tbody>
+																<td>Maria</td>
+																<td>Rodriguez</td>
+																<td>Administrador</td>
+																<td>*****</td>
+															</tbody>
+														</table>
+														<br>
+														<br>
+														<h4>Roles Asignados</h4>
+														<table class="table table-striped">
+															<thead> 
+																<tr> 
+																	<th>Nombre:</th> 
+																	<th>Habilitar:</th>			
+																</tr> 
+															</thead>
+															<tbody>
+																<td>Administrador</td>
 
-																				<input type="password" class="form-control" placeholder="Password">
-
-																				<input type="password" class="form-control" placeholder="Confirmar Password">
-
-																				<div class="sign-up">
-																					<input type="reset" value="Cerrar" data-toggle="collapse" data-target="#registro">
-
-																					<input type="submit" onclick="myFunction()" value="Registrar">
-																			
-																				</div>
-																				<div class="clearfix"></div>
-																			</form>
-																		</div>
-																	</div>
-																</div>
-															</div>
+																<td>
+																	<div class="checkbox-inline1"><label><input type="checkbox" checked=""></label></div>
+																</td>
+															</tbody>
+														</table>
+															
+														<br>
+														
+														<a href="#" class="btn btn-info">Guardar</a>
+												
+														<button type = "button" class = "btn btn-danger" data-toggle="collapse" data-target="#editar"  id="comando">X Cerrar</button>
+													</div>
+												</div>
 													
 											</div>
 									<!--/charts-inner-->
@@ -213,13 +230,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</div>
 				<!--//content-inner-->
 
-				<script>
+							<script>
 								$('#seccion').collapse({
   									toggle: false
 								})
 							</script>
 
-<!-- //Modal apertura de caja -->
+<!-- //Modal periodo -->
 <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" id="myModal1">
   <div class="modal-dialog modal-sm" role="document">
     <div class="modal-content">
@@ -249,7 +266,123 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     </div>
   </div>
 </div>
-<!-- //Modal apertura de caja -->
+<!-- //Modal periodo-->
+
+<!-- //Modal agregar -->
+<div class="modal fade bs-example-modal-md" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" id="agregar">
+  <div class="modal-dialog modal-md" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="exampleModalLabel">Nuevo Usuario</h4>
+      </div>
+
+      <div class="modal-body">
+      	<table class="table">
+      		<thead>
+      			<tr>
+      				<th>Nombre:</th>
+      				<th>Apellido:</th>
+      			</tr>
+      		</thead>
+
+      		<tbody>
+      			<td>
+      				<input class="form-control miles" name="nombre" id="nombre" placeholder="Nombre" type="text">
+      			</td>
+
+      			<td>
+      				<input class="form-control miles" name="apellido" id="apellido" placeholder="Apellido" type="text">
+      			</td>
+
+      		</tbody>
+      	</table>
+
+      	<table class="table">
+      		<thead>
+      			<tr>
+      				<th>Usuario:</th>
+      				<th>Contraseña:</th>
+      			</tr>
+      		</thead>
+
+      		<tbody>
+      			<td>
+      				<input class="form-control miles" name="usuario" id="usuario" placeholder="Usuario" type="text">
+      			</td>
+
+      			<td>
+      				<input class="form-control miles" name="contrasena" id="contrasena" placeholder="Contraseña" type="password">
+      			</td>
+      		</tbody>
+      	</table>
+		<button type = "button" class = "btn btn-info" id="comando">Ingresar</button>
+		<button type = "button" class = "btn btn-danger" data-dismiss="modal"  id="comando">Cancelar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- //Modal agregar -->
+
+<!-- //Modal Eliminar -->
+<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" id="myModalElim">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="exampleModalLabel">Eliminar</h4>
+      </div>
+
+      <div class="modal-body">
+      	<h4 class="modal-body">¿Deseas Eliminar?</h4>
+      	<br>
+      	<a href="#" type="button" class="btn btn-info"><span><i class="fa fa-trash-o" aria-hidden="true"></i></span> Eliminar</a>
+      	<a href="#" type="button" class="btn btn-danger" data-dismiss="modal"><span><i class="fa fa-times" aria-hidden="true"></i></span> Cancelar</a>		
+      </div>
+    </div>
+  </div>
+</div>
+<!-- //Modal Eliminar -->
+
+<!-- //Modal Habilitar -->
+<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" id="myModalHabi">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="exampleModalLabel">Habilitar</h4>
+      </div>
+
+      <div class="modal-body">
+      	<h4 class="modal-body">¿Deseas Habilitar?</h4>
+      	<br>
+      	<a href="#" type="button" class="btn btn-info"><span><i class="fa fa-check" aria-hidden="true"></i></span> Habilitar</a>
+      	<a href="#" type="button" class="btn btn-danger" data-dismiss="modal"><span><i class="fa fa-times" aria-hidden="true"></i></span> Cancelar</a>		
+      </div>
+    </div>
+  </div>
+</div>
+<!-- //Modal Habilitar -->
+
+<!-- //Modal Desabilitar -->
+<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" id="myModalDesa">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="exampleModalLabel">Desabilitar</h4>
+      </div>
+
+      <div class="modal-body">
+      	<h4 class="modal-body">¿Deseas Desabilidar?</h4>
+      	<br>
+      	<a href="#" type="button" class="btn btn-info"><span><i class="fa fa-trash-o" aria-hidden="true"></i></span> Desabilitar</a>
+      	<a href="#" type="button" class="btn btn-danger" data-dismiss="modal"><span><i class="fa fa-times" aria-hidden="true"></i></span> Cerrar</a>		
+      </div>
+    </div>
+  </div>
+</div>
+<!-- //Modal Desabilitar -->
 
 <!-- //Modal certificado -->
 <div class="modal fade bs-example-modal-md" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" id="myModal2">
@@ -617,7 +750,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										  <ul id="menu-academico-sub" >
 										    <li id="menu-academico-avaliacoes" ><a href="usuarios.html">Usuarios</a></li>
 										    <li id="menu-academico-boletim" ><a href="roles.html">Roles</a></li>
-										    <li id="menu-academico-boletim" ><a href="#">Bitacora</a></li>
+										    <li id="menu-academico-boletim" ><a href="bitacora.html">Bitacora</a></li>
 											
 										  </ul>
 									 </li>	
