@@ -631,6 +631,238 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </div>
 <!-- //Modal Vacaciones -->
 
+<!-- //Modal Centralización -->
+<div class="modal fade bs-example-modal-md" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" id="myModalCentralizar">
+  <div class="modal-dialog modal-md" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="exampleModalLabel">Centralización Mensual</h4>
+      </div>
+
+      <div class="modal-body">
+      	<table class="table">
+    <thead> 
+		<tr> 
+			<th>Empresa:</th> 
+			<th>Período a Pocesar:</th>
+			
+		</tr> 
+	</thead>
+	<tbody>
+		<td>
+			
+		</td>
+		
+		<td>
+			<input class="form-control" name="proceso" id="proceso" placeholder="Período a Procesar" type="text">
+		</td>
+			
+	</tbody>
+
+</table>
+
+<table class="table">
+    <thead> 
+		<tr> 
+			<th>Tipo de Proceso:</th> 
+			<th>Fecha de Cálculo:</th>
+			
+		</tr> 
+	</thead>
+	<tbody>
+		<td>
+			<select name="selector1" id="selector1" class="form-control1">
+				<option>Seleccione Empresa</option>
+				<option>Dolore, ab unde modi est!</option>
+				<option>Illum, fuga minus sit eaque.</option>
+				<option>Consequatur ducimus maiores voluptatum minima.</option>
+			</select>
+		</td>
+
+		<td>
+			<input placeholder="Fecha Inicio" class="form-control" id="datepicker8" type="date" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required=""/>
+		</td>
+		
+	</tbody>
+</table>
+
+<table class="table">
+    <thead> 
+		<tr> 
+			<th>Glosario:</th> 
+			<th>Actuliza con Costo:</th>
+			
+		</tr> 
+	</thead>
+	<tbody>
+		<td>
+			<input class="form-control" name="glosario" id="glosario" placeholder="Glosario" type="text">
+		</td>
+
+		<td>
+			<div class="checkbox-inline1">
+				<label>
+					<input type="checkbox">
+				</label>
+			</div>
+		</td>
+			
+	</tbody>
+</table>
+<br>
+		<h4>Resultado de Proceso</h4>
+		<table class="table">
+      		<thead> 
+				<tr> 
+					<th></th> 
+					<th></th>
+					
+				</tr> 
+			</thead>
+			<tbody>
+				
+				<td>
+					<div class="fileinput fileinput-new" data-provides="fileinput">
+    					<span class="btn btn-default btn-file">
+    						<span>Abrir Documento</span>
+    						<input type="file" />
+    					</span>
+    					<span class="fileinput-filename"></span>
+    					<span class="fileinput-new"></span>
+    				</div>
+				</td>
+				<td>
+					<input type="text" name="debe" id="debe" class="form-control" placeholder="Debe $">
+					<input type="text" name="haber" id="haber" class="form-control" placeholder="Haber $">
+					<input type="text" name="ajuste" id="ajuste" class="form-control" placeholder="Ajuste $">
+				</td>
+			</tbody>
+      	</table>
+
+	
+		<br>		
+		<button type = "button" class = "btn btn-info" id="comando">Guardar</button>
+		<button type = "button" class = "btn btn-danger" data-dismiss="modal"  id="comando">Cancelar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- //Modal Centralización -->
+
+<!-- //Modal Cierre-->
+<div class="modal fade bs-example-modal-md" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" id="myModalCierre">
+  <div class="modal-dialog modal-md" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="exampleModalLabel">Cierre Mensual</h4>
+      </div>
+
+      <div class="modal-body">
+      	<table class="table">
+    <thead> 
+		<tr> 
+			<th>Empresa:</th> 
+			<th>Proceso de:</th>
+			
+		</tr> 
+	</thead>
+	<tbody>
+		<td></td>
+		
+		<td></td>
+			
+	</tbody>
+
+</table>
+
+<table class="table">
+    <thead> 
+		<tr> 
+			<th>Período:</th> 
+			<th>Tipo de Cierre:</th>
+			
+		</tr> 
+	</thead>
+	<tbody>
+		<td></td>
+
+		<td></td>
+		
+	</tbody>
+</table>
+
+<table class="table">
+    <thead> 
+		<tr> 
+			<th>Procesos del Cierre:</th>
+			<th>Opciones:</th> 	
+		</tr> 
+	</thead>
+	<tbody>
+		<td>
+			<input class="form-control" name="cierre" id="cierre" type="text">
+			<br>
+			<input class="form-control" name="cierre" id="cierre" type="text">
+			<br>
+			<input class="form-control" name="cierre" id="cierre" type="text">
+			<br>
+			<input class="form-control" name="cierre" id="cierre" type="text">
+		</td>
+
+		<td>
+			<button type="button" class="btn btn-info opciones" id="opciones" title="Cierre de Proceso"><i class="fa fa-eye-slash" aria-hidden="true"></i></button>
+			<button type="button" class="btn btn-danger" id="opciones" title="Eliminar" data-toggle="modal" data-target="#myModalElim"><i class="fa fa-times" aria-hidden="true"></i></button>
+			<br>
+			<br>
+
+			<button type="button" class="btn btn-info opciones" id="opciones" title="Cierre de Proceso"><i class="fa fa-eye-slash" aria-hidden="true"></i></button>
+			<button type="button" class="btn btn-danger" id="opciones" title="Eliminar" data-toggle="modal" data-target="#myModalElim"><i class="fa fa-times" aria-hidden="true"></i></button>
+			<br>
+			<br>
+			<br>
+			<button type="button" class="btn btn-info opciones" id="opciones" title="Cierre de Proceso"><i class="fa fa-eye-slash" aria-hidden="true"></i></button>
+			<button type="button" class="btn btn-danger" id="opciones" title="Eliminar" data-toggle="modal" data-target="#myModalElim"><i class="fa fa-times" aria-hidden="true"></i></button>
+			<br>
+			<br>
+			<button type="button" class="btn btn-info opciones" id="opciones" title="Cierre de Proceso"><i class="fa fa-eye-slash" aria-hidden="true"></i></button>
+			<button type="button" class="btn btn-danger" id="opciones" title="Eliminar" data-toggle="modal" data-target="#myModalElim"><i class="fa fa-times" aria-hidden="true"></i></button>
+        																		
+		</td>
+			
+	</tbody>
+</table>
+
+		<br>		
+		<button type = "button" class = "btn btn-info" id="comando">Procesar Cierre</button>
+		<button type = "button" class = "btn btn-danger" data-dismiss="modal"  id="comando">Cancelar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- //Modal Cierre -->
+
+<!-- //Modal Eliminar -->
+<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" id="myModalElim">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="exampleModalLabel">Eliminar</h4>
+      </div>
+
+      <div class="modal-body">
+      	<h4 class="modal-body">¿Deseas Eliminar?</h4>
+      	<br>
+      	<a href="#" type="button" class="btn btn-info"><span><i class="fa fa-trash-o" aria-hidden="true"></i></span> Eliminar</a>
+      	<a href="#" type="button" class="btn btn-danger" data-dismiss="modal"><span><i class="fa fa-times" aria-hidden="true"></i></span> Cancelar</a>		
+      </div>
+    </div>
+  </div>
+</div>
+<!-- //Modal Eliminar -->
+
 			<!--/sidebar-menu-->
 				<div class="sidebar-menu">
 					<header class="logo">
@@ -721,8 +953,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
                                      <li id="menu-comunicacao" ><a href="#"><i class="fa fa-list"></i> <span>Procesos Mensuales</span><span class="fa fa-angle-right" style="float: right"></span></a>
                                         <ul>
-											<li><a href="#"> Centralizacion Mensual</a></li>
-						           			<li><a href="#"> Cierre Mensual</a></li>
+											<li><a href="#" data-toggle="modal" data-target="#myModalCentralizar"> Centralizacion Mensual</a></li>
+						           			<li><a href="#" data-toggle="modal" data-target="#myModalCierre"> Cierre Mensual</a></li>
 						           			<li id="menu-academico-boletim" ><a href="#">Transferencia a Bancos y Otros</a>
                                                 <ul id="menu-mensagens-sub" >
 													<li id="menu-mensagens-enviadas" style="width:200px" ><a href="facturacion.html">Traspaso a Bancos</a></li>
