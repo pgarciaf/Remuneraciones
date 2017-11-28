@@ -546,7 +546,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</td>
 
 		<td>
-			<input placeholder="Fecha Inicio" class="form-control" id="datepicker8" type="date" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required=""/>
+			<input placeholder="Fecha Inicio" class="form-control" id="datepicker8" type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required=""/>
 		</td>
 		
 	</tbody>
@@ -875,10 +875,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										});
 							</script>
 <!--js -->
-<link rel="stylesheet" href="css/vroom.css">
-<script type="text/javascript" src="js/vroom.js"></script>
-<script type="text/javascript" src="js/TweenLite.min.js"></script>
-<script type="text/javascript" src="js/CSSPlugin.min.js"></script>
 <script src="js/jquery.nicescroll.js"></script>
 <script src="js/scripts.js"></script>
 
@@ -892,5 +888,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 })
 </script>
 <!-- /Script Modal -->
+
+<!--date-piker-->
+<link rel="stylesheet" href="css/jquery-ui.css" />
+<script src="js/jquery-ui.js"></script>
+<script>
+	$(function() {
+		
+		$("#datepicker8").datepicker();
+		
+
+	});
+</script>
+<!--date-piker-->
 </body>
 </html>
