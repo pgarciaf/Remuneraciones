@@ -728,6 +728,64 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </div>
 <!-- //Modal Eliminar -->
 
+<!-- //Modal Campos -->
+<div class="modal fade bs-example-modal-md" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" id="myModalCampos">
+  <div class="modal-dialog modal-md" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="exampleModalLabel">Ingreso Masivo de Campos</h4>
+      </div>
+
+      <div class="modal-body">
+      	<h4 class="modal-body">Ingresar Campos</h4>
+      	<br>
+      	<div class="fileinput fileinput-new" data-provides="fileinput">
+    		<span class="btn btn-default btn-file">
+    			<span>Cargar Archivo</span>
+    			<input type="file" />
+    		</span>
+    		<span class="fileinput-filename"></span>
+    		<span class="fileinput-new"> Ningún archivo Cargado</span>
+    	</div>
+    	<br>
+      	<a href="#" type="button" class="btn btn-info"><span><i class="fa fa-floppy-o" aria-hidden="true"></i></span> Guardar</a>
+      	<a href="#" type="button" class="btn btn-danger" data-dismiss="modal"><span><i class="fa fa-times" aria-hidden="true"></i></span> Cerrar</a>		
+      </div>
+    </div>
+  </div>
+</div>
+<!-- //Modal Campos -->
+
+<!-- //Modal Planilla -->
+<div class="modal fade bs-example-modal-md" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" id="myModalPlanillas">
+  <div class="modal-dialog modal-md" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="exampleModalLabel">Ingreso Según Planilla</h4>
+      </div>
+
+      <div class="modal-body">
+      	<h4 class="modal-body">Ingresar de Planillas</h4>
+      	<br>
+      	<div class="fileinput fileinput-new" data-provides="fileinput">
+    		<span class="btn btn-default btn-file">
+    			<span>Cargar Planilla</span>
+    			<input type="file" />
+    		</span>
+    		<span class="fileinput-filename"></span>
+    		<span class="fileinput-new"> Ningún archivo Cargado</span>
+    	</div>
+    	<br>
+      	<a href="#" type="button" class="btn btn-info"><span><i class="fa fa-floppy-o" aria-hidden="true"></i></span> Guardar</a>
+      	<a href="#" type="button" class="btn btn-danger" data-dismiss="modal"><span><i class="fa fa-times" aria-hidden="true"></i></span> Cerrar</a>		
+      </div>
+    </div>
+  </div>
+</div>
+<!-- //Modal Planilla -->
+
 
 			<!--/sidebar-menu-->
 				<div class="sidebar-menu">
@@ -775,8 +833,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								               <li id="menu-academico-boletim" ><a href="#">Ingresos Masivos</a>
 								                   <ul id="menu-academico-sub" >
 														<li id="menu-mensagens-enviadas" style="width:210px" ><a href="#" data-toggle="modal" data-target="#myModal14">Carga Masiva Hab/Des</a></li>
-														<li id="menu-mensagens-recebidas"  style="width:210px"><a href="#">Ingreso Masivo de Campos</a></li>
-														<li id="menu-mensagens-recebidas"  style="width:210px"><a href="#">Ingreso Segun plantilla</a></li>
+
+														<li id="menu-mensagens-recebidas"  style="width:210px"><a href="#" data-toggle="modal" data-target="#myModalCampos">Ingreso Masivo de Campos</a></li>
+
+														<li id="menu-mensagens-recebidas"  style="width:210px"><a href="#" data-toggle="modal" data-target="#myModalPlanillas">Ingreso Según plantilla</a></li>
+														
 														<li id="menu-mensagens-recebidas"  style="width:210px"><a href="#">Mantencion de Plantillas</a></li>
 										  			</ul>
                                                 </li>
