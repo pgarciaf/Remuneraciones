@@ -111,290 +111,494 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<!-- //header-ends -->
 						<!--outter-wp-->
 							<div class="outter-wp">
-									<!--sub-heard-part-->
-									  <div class="sub-heard-part">
-									   		<ol class="breadcrumb m-b-0">
-												<li><a href="inicio.html">Inicio</a></li>
-												<li class="active">Ficha del Colaborador</li>
-											</ol>
-									   </div>
-								  <!--//sub-heard-part-->
+								<!--sub-heard-part-->
+								<div class="sub-heard-part">
+									<ul class="nav nav-tabs">
+  										<li class="active"><a href="#datospersonales" data-toggle="tab">Datos Personales</a></li>
+  										<li><a href="#datosempresa" data-toggle="tab">Datos Empresa</a></li>
+  										<li><a href="#datosllss" data-toggle="tab">L.L.S.S</a></li>
+  										<li><a href="#pago" data-toggle="tab">Forma Pago</a></li>
+  										<li><a href="#" data-toggle="tab">Otros</a></li>
+  										<li><a href="#configuracion" data-toggle="tab">Configuraciones</a></li>
+									</ul>
+								</div>
+								<!--//sub-heard-part-->
 								
-									<div class="graph-visual tables-main">
-											
-													<h3 class="inner-tittle two">Ficha Colaborador <a href="nuevo_colaborador.html" type="button" class="btn btn-primary"><i class="fa fa-plus" aria-hidden="true"></i> Nuevo Colaborador</a></h3>
+								<div class="graph-visual tables-main">
+									<h3 class="inner-tittle two">Nuevo Colaborador </h3>
+									<div class="graph">
+										<div class="tab-content">
+											<div class="tab-pane active" id="datospersonales">
+												<section id="personales">
+													<table class="table table-striped">
+														<thead> 
+															<tr> 
+																<th>Rut:</th> 
+																<th>Nombre Completo:</th>
+																		
+															</tr> 
+														</thead>
+														<tbody>
+															<td>
+																<input type="text" name="rut" class="form-control" id="" placeholder="98.123.456-7">
+															</td>
+															<td>
+																<input type="text" name="rut" class="form-control" id="" placeholder="Nombre Completo">
+															</td>
+														</tbody>
+													</table>
 
-													<h3 class="inner-tittle two">Descripción</h3>
-														  <div class="graph">
+													<table class="table table-striped">
+														<thead> 
+															<tr> 
+																<th>Fecha de Nacimiento:</th> 
+																<th>Nacionalidad:</th>
+																		
+															</tr> 
+														</thead>
+														<tbody>
+															<td>
+																<input placeholder="Fecha de Nacimiento" class="form-control" id="datepicker" type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required=""/>
+															</td>
+															<td>
+																<select name="selector1" id="selector1" class="form-control1">
+																	<option>Seleccione.</option>
+																	<option>Dolore, ab unde modi est!</option>
+																	<option>Illum, fuga minus sit eaque.</option>
+																	<option>Consequatur ducimus maiores voluptatum min</option>
+																</select>
+															</td>
+														</tbody>
+													</table>
 
-														  	
-															<div class="tables">
-																<table class="table"> 
-																	<thead> 
-																		<tr>
-																			<th></th>
-																			<th>Rut</th> 
-																			<th>Nombre Apellido</th> 
-																			<th>Teléfono</th> 
-																			<th>Tipo Trabajador</th> 
-																			<th>Opciones</th>
+													<table class="table table-striped">
+														<thead> 
+															<tr> 
+																<th>Estado Civil:</th> 
+																<th>Sexo:</th>
+																		
+															</tr> 
+														</thead>
+														<tbody>
+															<td>
+																<select name="selector1" id="selector1" class="form-control1">
+																	<option>Seleccione.</option>
+																	<option>Dolore, ab unde modi est!</option>
+																	<option>Illum, fuga minus sit eaque.</option>
+																	<option>Consequatur ducimus maiores voluptatum min</option>
+																</select>
+															</td>
+															<td>
+																<select name="selector1" id="selector1" class="form-control1">
+																	<option>Seleccione.</option>
+																	<option>Dolore, ab unde modi est!</option>
+																	<option>Illum, fuga minus sit eaque.</option>
+																	<option>Consequatur ducimus maiores voluptatum min</option>
+																</select>
+															</td>
+														</tbody>
+													</table>
 
-																		</tr> 
-																	</thead> 
-																	<tbody> 
-																		<tr class="active" id="variable">
-																			
-																			<th>
-																				<div class="form-check">
-																					
-																					<label class="form-check-label" data-toggle="collapse" data-target="#seccion">
-																						<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-																					</label>
-																				
-																				</div>
-																				
-																			</th>
-																			
-																			<th scope="row" data-toggle="collapse" data-target="#seccion">95.516.320-4</th> 
-																			<td data-toggle="collapse" data-target="#seccion">Agricola y Comercial</td> 
-																			<td>963365214</td> 
-																			<td>Empleado</td> 
-																			<td>
-																				<button type="button" class="btn btn-info opciones" id="opciones" title="Editar"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
-        																		
-        																		<button type="button" class="btn btn-danger" id="opciones" title="Eliminar" data-toggle="modal" data-target="#myModalElim"><i class="fa fa-times" aria-hidden="true"></i></button>
-																			</td>
-																		</tr> 
-																		<tr id="variable"> 
-																			<th>
-																				<div class="form-check">
-  																					<label class="form-check-label" data-toggle="collapse" data-target="#seccion">
-    																			<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-    
-  																					</label>
-																				</div>
-																			</th>
-																			<th scope="row" data-toggle="collapse" data-target="#seccion">95.516.320-4</th> 
-																			<td data-toggle="collapse" data-target="#seccion">Agricola y Comercial</td> 
-																			<td>963365214</td> 
-																			<td>Empleado</td>
-																			
-																			<td>
-																				<button type="button" class="btn btn-info" id="opciones" title="Editar"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
-        																		
-        																		<button type="button" class="btn btn-danger" id="opciones" title="Eliminar" data-toggle="modal" data-target="#myModalElim"><i class="fa fa-times" aria-hidden="true"></i></button>
-																			</td> 
-																		</tr> 
-																		<tr class="success" id="variable"> 
-																			<th>
-																				<div class="form-check">
-  																					<label class="form-check-label" data-toggle="collapse" data-target="#seccion">
-    																			<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-    
-  																					</label>
-																				</div>
-																			</th>
-																			<th scope="row" data-toggle="collapse" data-target="#seccion">95.516.320-4</th> 
-																			<td data-toggle="collapse" data-target="#seccion">Agricola y Comercial</td> 
-																			<td>963365214</td> 
-																			<td>Empleado</td>
-																			
-																			<td>
-																				<button type="button" class="btn btn-info" id="opciones" title="Editar"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
-        																		
-        																		<button type="button" class="btn btn-danger" id="opciones" title="Eliminar" data-toggle="modal" data-target="#myModalElim"><i class="fa fa-times" aria-hidden="true"></i></button>
-																			</td> 
-																		</tr> 
+													<table class="table table-striped">
+														<thead> 
+															<tr> 
+																<th>Dirección:</th> 
+																<th>Email:</th>
 																		
-																	</tbody> 
-																</table> 
-															</div>
-												
-													</div>
-													
-													<div class="collapse" id="">
-														<div class="well">
-															<h4>Nombre Completo</h4>
-															<table class="table table-striped">
-																<thead> 
-																	<tr> 
-																		<th>Cargo:</th> 
-																		<th>Estado:</th>
-																		<th>Puesto:</th>
-																		<th>Departamento:</th>
-																		<th>Email:</th>
-																		
-																	</tr> 
-																</thead>
-																<tbody>
-																	<td>Consultor</td>
-																	<td>Contratado</td>
-																	<td>000396</td>
-																	<td>Sistemas</td>
-																	<td>contrato@gmail.com</td>
-																</tbody>
-															</table>
-															
-															<br>
-															<button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal11">Mostrar Más</button>
-														</div>
-													</div>
+															</tr> 
+														</thead>
+														<tbody>
+															<td>
+																<input type="text" name="direccion" id="direccion" class="form-control" placeholder="Dirección" data-toggle="modal" data-target="#myModalDireccion">
+															</td>
+															<td>
+																<input type="text" name="email" id="email" class="form-control" placeholder="Email">
+															</td>
+														</tbody>
+													</table>
 
-													<div class="collapse" id="seccion">
-														<div class="well">
-															<h4>Datos Personales</h4>
-															<table class="table table-striped">
-																<thead> 
-																	<tr> 
-																		<th>Rut:</th> 
-																		<th>Fecha Nacim:</th>
+													<table class="table table-striped">
+														<thead> 
+															<tr> 
+																<th>Estudios:</th> 
+																<th>Titulo:</th>
+																<th>Idioma:</th>
 																		
-																	</tr> 
-																</thead>
-																<tbody>
-																	<td>
-																		
-																	</td>
-																	<td>
-																		
-																	</td>
-																</tbody>
-															</table>
+															</tr> 
+														</thead>
+														<tbody>
+															<td>
+																<select name="selector1" id="selector1" class="form-control1">
+																	<option>Seleccione.</option>
+																	<option>Dolore, ab unde modi est!</option>
+																	<option>Illum, fuga minus sit eaque.</option>
+																	<option>Consequatur ducimus maiores voluptatum min</option>
+																</select>
+															</td>
+															<td>
+																<select name="selector1" id="selector1" class="form-control1">
+																	<option>Seleccione.</option>
+																	<option>Dolore, ab unde modi est!</option>
+																	<option>Illum, fuga minus sit eaque.</option>
+																	<option>Consequatur ducimus maiores voluptatum min</option>
+																</select>
+															</td>
+															<td>
+																<select name="selector1" id="selector1" class="form-control1">
+																	<option>Seleccione.</option>
+																	<option>Dolore, ab unde modi est!</option>
+																	<option>Illum, fuga minus sit eaque.</option>
+																	<option>Consequatur ducimus maiores voluptatum min</option>
+																</select>
+															</td>
+														</tbody>
+													</table>
 
-															<table class="table table-striped">
-    															<thead> 
-																	<tr> 
-																		<th>Estado Civil:</th> 
-																		<th>Nacionalidad:</th>
-																		<th>Sexo:</th>
-															
-																	</tr> 
-																</thead>
-																<tbody>
-																	<td>
+													<table class="table table-striped">
+														<thead> 
+															<tr> 
+																<th>Jefe o Supervisor:</th> 
+																<th>Reemplazo de:</th>
 																		
-																	</td>
-																	<td>
-																		
-																	</td>
-																	<td>
-																		
-																	</td>
-														
-																</tbody>
-															</table>
+															</tr> 
+														</thead>
+														<tbody>
+															<td>
+																<input type="text" name="jefe" id="jefe" class="form-control" placeholder="Jefe o Supervisor">
+															</td>
+															<td>
+																<input type="text" name="reemplazo" id="reemplazo" class="form-control" placeholder="Reemplazo">
+															</td>
+														</tbody>
+													</table>
 
-															<table class="table table-striped">
-															    <thead> 
-																	<tr> 
-																		<th>Dirección:</th>
-																		<th>Email:</th> 
-															
-																	</tr> 
-																</thead>
-																<tbody>
-																	<td>
+													<table class="table table-striped">
+														<thead> 
+															<tr> 
+																<th>Licencia:</th> 
+																<th>Talla de Polera:</th>
+																<th>Talla de Pantalón:</th>
+																		
+															</tr> 
+														</thead>
+														<tbody>
+															<td>
+																<select name="selector1" id="selector1" class="form-control1">
+																	<option>Seleccione.</option>
+																	<option>Dolore, ab unde modi est!</option>
+																	<option>Illum, fuga minus sit eaque.</option>
+																	<option>Consequatur ducimus maiores voluptatum min</option>
+																</select>
+															</td>
+															<td>
+																<input type="text" name="polera" id="polera" class="form-control" placeholder="Talla de Polera">
+															</td>
+															<td>
+																<input type="text" name="pantalon" id="pantalon" class="form-control" placeholder="Talla de Pantalón">
+															</td>
+														</tbody>
+													</table>
 
-																	</td>
+													<table class="table table-striped">
+														<thead> 
+															<tr> 
+																<th>Tipo de Documento:</th> 
+																<th>Centro de Costo:</th>
+																		
+															</tr> 
+														</thead>
+														<tbody>
+															<td>
+																<input type="text" name="tipo_documento" id="tipo_documento" class="form-control" placeholder="Tipo de Documento">
+															</td>
+															<td>
+																<input type="text" name="centro_costo" id="centro_costo" class="form-control" placeholder="Centro de Costo">
+															</td>
+														</tbody>
+													</table>
 
-																	<td>
+													<table class="table table-striped">
+														<thead> 
+															<tr> 
+																<th>C de Beneficio:</th> 
+																<th>Número de Celular:</th>
 																		
-																	</td>
-														
-																</tbody>
-															</table>
-															<table class="table table-striped">
-															    <thead> 
-																	<tr> 
-																		<th>Estudios:</th> 
-																		<th>Titulo:</th>
-																		<th>Idioma:</th>
-																	</tr> 
-																</thead>
-																<tbody>
-																	<td>
-																		
-																	</td>
+															</tr> 
+														</thead>
+														<tbody>
+															<td>
+																<input type="text" name="beneficio" id="beneficio" class="form-control" placeholder="C de Beneficio">
+															</td>
+															<td>
+																<input type="text" name="numero_celular" id="numero_celular" class="form-control" placeholder="Número de Celular">
+															</td>
+														</tbody>
+													</table>
+												</section>
+											</div>
 
-																	<td>
-																		
-																	</td>
-																	<td>
-																	
-																	</td>
-																</tbody>
-															</table>
+											<div class="tab-pane" id="datosempresa">
+												<section class="empresa">
+													<table class="table table-striped">
+    													<thead> 
+															<tr> 
+																<th>Clase:</th> 
+																<th>Tipo C.C:</th>
+															</tr> 
+														</thead>
+														<tbody>
+															<td>
+																<input type="text" name="clase" class="form-control" id="clase" placeholder="Clases">
+															</td>
+															<td>
+																<input type="text" name="tipo_cc" class="form-control" id="tipo_cc" placeholder="Tipo CC">
+															</td>
+		
+														</tbody>
+													</table>
 
-															<table class="table table-striped">
-																<thead> 
-																	<tr> 
-																		<th>Jefe o Supervisor:</th> 
-																		<th>Reemplazo de:</th>
-																		
-																	</tr> 
-																</thead>
-																<tbody>
-																	<td>
-																		
-																	</td>
-																	<td>
-																	
-																	</td>
-																</tbody>
-															</table>
+													<table class="table table-striped">
+    													<thead> 
+															<tr> 
+																<th>Categoria:</th> 
+																<th>Lugar de Pago:</th>
+															</tr> 
+														</thead>
+														<tbody>
+															<td>
+																<input type="text" name="categoria" class="form-control" id="categoria" placeholder="Categoria">
+															</td>
+															<td>
+																<input type="text" name="lugar_pago" class="form-control" id="lugar_pago" placeholder="Lugar de Pago" data-toggle="modal" data-target="#myModalPago">
+															</td>
+		
+														</tbody>
+													</table>
 
-															<table class="table table-striped">
-															    <thead> 
-																	<tr> 
-																		<th>Licencia Conducir:</th> 
-																		<th>Talla de Polera:</th>
-																		<th>Talla Pantalón:</th>
-																	</tr> 
-																</thead>
-																<tbody>
-																	<td>
-																	
-																	</td>
+													<table class="table table-striped">
+    													<thead> 
+															<tr> 
+																<th>Fecha de Ingreso:</th> 
+																<th>Fecha de Retiro:</th>
+															</tr> 
+														</thead>
+														<tbody>
+															<td>
+																<input placeholder="Fecha Ingreso" class="form-control" id="datepicker2" type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required=""/>
+															</td>
+															<td>
+																<input placeholder="Fecha Retiro" class="form-control" id="datepicker3" type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required=""/>
+															</td>
+		
+														</tbody>
+													</table>
 
-																	<td>
-																		
-																	</td>
-																	<td>
-																		
-																	</td>
-																</tbody>
-															</table>
+													<table class="table table-striped">
+    													<thead> 
+															<tr> 
+																<th>Motivo de Egreso:</th> 
+																<th>Tipo de Contrato:</th>
+																<th>Fecha de Finiquito:</th>
+															</tr> 
+														</thead>
+														<tbody>
+															<td>
+																<select name="selector1" id="selector1" class="form-control1">
+																	<option>Seleccione</option>
+																	<option>Dolore, ab unde modi est!</option>
+																	<option>Illum, fuga minus sit eaque.</option>
+																	<option>Consequatur ducimus maiores voluptatum minima.</option>
+																</select>
+															</td>
+															<td>
+																<select name="selector1" id="selector1" class="form-control1">
+																	<option>Seleccione</option>
+																	<option>Dolore, ab unde modi est!</option>
+																	<option>Illum, fuga minus sit eaque.</option>
+																	<option>Consequatur ducimus maiores voluptatum minima.</option>
+																</select>
+															</td>
+															<td>
+																<input placeholder="Fecha de Finiquito" class="form-control" id="datepicker4" type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required=""/>
+															</td>
+		
+														</tbody>
+													</table>
+												</section>
+											</div>
 
-															<table class="table table-striped">
-															    <thead> 
-																	<tr> 
-																		
-																	</tr> 
-																</thead>
-																<tbody>
-																	<td>
-																		
-																	</td>
+											<div class="tab-pane" id="datosllss">
+												<section class="llss">
+													<table class="table table-striped">
+    													<thead> 
+															<tr> 
+																<th>Código Regimen:</th> 
+																<th>Jubilados:</th>
+															</tr> 
+														</thead>
+														<tbody>
+															<td>
+																<select name="selector1" id="selector1" class="form-control1">
+																	<option>Seleccione.</option>
+																	<option>Dolore, ab unde modi est!</option>
+																	<option>Illum, fuga minus sit eaque.</option>
+																	<option>Consequatur ducimus maiores voluptatum min</option>
+																</select>
+															</td>
+															<td>
+																<select name="selector1" id="selector1" class="form-control1">
+																	<option>Seleccione.</option>
+																	<option>Dolore, ab unde modi est!</option>
+																	<option>Illum, fuga minus sit eaque.</option>
+																	<option>Consequatur ducimus maiores voluptatum min</option>
+																</select>
+															</td>
+														</tbody>
+													</table>
 
-																	<td>
-																		
-																	</td>
-																	<td>
-																		
-																	</td>
-																	<td>
-																		
-																	</td>
-																</tbody>
-															</table>
+													<table class="table table-striped">
+    													<thead> 
+															<tr> 
+																<th>L. Pago Cotiz:</th> 
+																<th>A.F.P:</th>
+															</tr> 
+														</thead>
+														<tbody>
+															<td>
+																<select name="selector1" id="selector1" class="form-control1">
+																	<option>Seleccione.</option>
+																	<option>Dolore, ab unde modi est!</option>
+																	<option>Illum, fuga minus sit eaque.</option>
+																	<option>Consequatur ducimus maiores voluptatum min</option>
+																</select>
+															</td>
+															<td>
+																<select name="selector1" id="selector1" class="form-control1">
+																	<option>Seleccione.</option>
+																	<option>Dolore, ab unde modi est!</option>
+																	<option>Illum, fuga minus sit eaque.</option>
+																	<option>Consequatur ducimus maiores voluptatum min</option>
+																</select>
+															</td>
+														</tbody>
+													</table>
 
-															
-															<br>
-															<button type="button" class="btn btn-success" data-toggle="collapse" data-target="#seccion">Cerrar</button>
-														</div>
-													</div>
+													<table class="table table-striped">
+    													<thead> 
+															<tr> 
+																<th>Fecha Incorporación AFP:</th> 
+																<th>Fecha Seguro Cesantia:</th>
+															</tr> 
+														</thead>
+														<tbody>
+															<td>
+																<input placeholder="Fecha Incorp.AFP" class="form-control" id="datepicker5" type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required=""/>
+															</td>
+															<td>
+																<input placeholder="Fecha Seguro Cesantia" class="form-control" id="datepicker6" type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required=""/>
+															</td>
+														</tbody>
+													</table>
+												</section>
+											</div>
+
+											<div class="tab-pane" id="pago">
+												<section class="formapago">
+													<table class="table table-striped">
+    													<thead> 
+															<tr> 
+																<th>Forma de Pago:</th> 
+																<th>Banco:</th>
+															</tr> 
+														</thead>
+														<tbody>
+															<td>
+																<select name="selector1" id="selector1" class="form-control1">
+																	<option>Seleccione.</option>
+																	<option>Dolore, ab unde modi est!</option>
+																	<option>Illum, fuga minus sit eaque.</option>
+																	<option>Consequatur ducimus maiores voluptatum min</option>
+																</select>
+															</td>
+															<td>
+																<select name="selector1" id="selector1" class="form-control1">
+																	<option>Seleccione.</option>
+																	<option>Dolore, ab unde modi est!</option>
+																	<option>Illum, fuga minus sit eaque.</option>
+																	<option>Consequatur ducimus maiores voluptatum min</option>
+																</select>
+															</td>
+														</tbody>
+													</table>
+
+													<table class="table table-striped">
+    													<thead> 
+															<tr> 
+																<th>Número de Cuenta:</th> 
+																<th>Rut:</th>
+															</tr> 
+														</thead>
+														<tbody>
+															<td>
+																<input type="text" name="cta_bancaria" class="form-control" id="cta_bancaria" placeholder="Nº Cuenta Bancaria">
+															</td>
+															<td>
+																<input type="text" name="rut" class="form-control" id="rut" placeholder="Rut">
+															</td>
+														</tbody>
+													</table>
+
+													<table class="table table-striped">
+    													<thead> 
+															<tr> 
+																<th>Nombre Completo:</th> 
+																<th>Email:</th>
+															</tr> 
+														</thead>
+														<tbody>
+															<td>
+																<input type="text" name="nombre" class="form-control" id="nombre" placeholder="Nombre Completo">
+															</td>
+															<td>
+																<input type="text" name="email" class="form-control" id="email" placeholder="Email">
+															</td>
+														</tbody>
+													</table>
+												</section>
+											</div>
+
+											<div class="tab-pane" id="configuracion">
+												<section class="configuracion">
+													<table class="table table-striped">
+    													<thead> 
+															<tr> 
+																<th>Vacaciones:</th> 
+																<th>Cheque Restaurante:</th>
+																<th>Licencias Médicas</th>
+															</tr> 
+														</thead>
+														<tbody>
+															<td>
+																<input type="text" name="vacaciones" class="form-control" id="vacaciones" placeholder="Vacaciones" data-toggle="modal" data-target="#myModal12">
+															</td>
+															<td>
+																<input type="text" name="cheque_restau" class="form-control" id="cheque_restau" placeholder="Cheque Restaurante" data-toggle="modal" data-target="#myModal9">
+															</td>
+															<td>
+																<input type="text" name="licencia" class="form-control" id="licencia" placeholder="Licencias Médicas" data-toggle="modal" data-target="#myModal10">
+															</td>
+														</tbody>
+													</table>
+												</section>
 											</div>
 										</div>
+										<br>
+										<br>
+										<a href="#" type="button" class="btn btn-info">Guardar</a>
+										<a href="colaborador.html" type="button" class="btn btn-success">Volver</a>	
+									</div>
+								</div>
+							</div>
 										
 											
 
@@ -415,7 +619,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								})
 							</script>
 
-
+							<script>
+								$('#myTabs a').click(function (e) {
+  									e.preventDefault()
+  									$(this).tab('show')
+								})
+							</script>
 				<!--//content-inner-->
 
 <!-- //Modal cargo -->
@@ -517,355 +726,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </div>
 <!-- //Modal Eliminar -->
 
-<!-- //Modal Datos Personales -->
-<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" id="myModal">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-    	<div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="exampleModalLabel">Datos Personales</h4>
-      </div>
-      <div class="modal-body">
-      	<table class="table">
-    <thead> 
-		<div class="collapse" id="seccion">
-														<div class="well">
-															<h4>Datos Personales</h4>
-															<table class="table table-striped">
-																<thead> 
-																	<tr> 
-																		<th>Rut:</th> 
-																		<th>Fecha Nacim:</th>
-																		
-																	</tr> 
-																</thead>
-																<tbody>
-																	<td>
-																		<input type="text" name="rut" class="form-control" id="" placeholder="98.123.456-7">
-																	</td>
-																	<td>
-																		<input placeholder="Fecha Inicio" class="form-control" id="datepicker" type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required=""/>
-																	</td>
-																</tbody>
-															</table>
 
-															<table class="table table-striped">
-    															<thead> 
-																	<tr> 
-																		<th>Estado Civil:</th> 
-																		<th>Nacionalidad:</th>
-																		<th>Sexo:</th>
-															
-																	</tr> 
-																</thead>
-																<tbody>
-																	<td>
-																		<select name="selector1" id="selector1" class="form-control1">
-																			<option>Seleccione.</option>
-																			<option>Dolore, ab unde modi est!</option>
-																			<option>Illum, fuga minus sit eaque.</option>
-																			<option>Consequatur ducimus maiores voluptatum min</option>
-																		</select>
-																	</td>
-																	<td>
-																		<select name="selector1" id="selector1" class="form-control1">
-																			<option>Seleccione.</option>
-																			<option>Dolore, ab unde modi est!</option>
-																			<option>Illum, fuga minus sit eaque.</option>
-																			<option>Consequatur ducimus maiores voluptatum min</option>
-																		</select>
-																	</td>
-																	<td>
-																		<select name="selector1" id="selector1" class="form-control1">
-																			<option>Seleccione.</option>
-																			<option>Dolore, ab unde modi est!</option>
-																			<option>Illum, fuga minus sit eaque.</option>
-																			<option>Consequatur ducimus maiores voluptatum min</option>
-																		</select>
-																	</td>
-														
-																</tbody>
-															</table>
-
-															<table class="table table-striped">
-															    <thead> 
-																	<tr> 
-																		<th>Dirección:</th>
-																		<th>Email:</th> 
-															
-																	</tr> 
-																</thead>
-																<tbody>
-																	<td>
-
-																		<a href="#" data-toggle="modal" data-target="#myModal1">
-																			<input type="text" name="direccion" class="form-control" id="direccion" placeholder="Dirección" >
-																		</a>
-			
-																	</td>
-
-																	<td>
-																		<input type="text" name="email" class="form-control" id="email" placeholder="Email">
-																	</td>
-														
-																</tbody>
-															</table>
-															<table class="table table-striped">
-															    <thead> 
-																	<tr> 
-																		<th>Estudios:</th> 
-																		<th>Titulo:</th>
-																		<th>Idioma:</th>
-																	</tr> 
-																</thead>
-																<tbody>
-																	<td>
-																		<select name="selector1" id="selector1" class="form-control1">
-																			<option>Seleccione.</option>
-																			<option>Dolore, ab unde modi est!</option>
-																			<option>Illum, fuga minus sit eaque.</option>
-																			<option>Consequatur ducimus maiores voluptatum minima.</option>
-																		</select>
-																	</td>
-
-																	<td>
-																		<input type="text" name="titulo" class="form-control" id="titulo" placeholder="Titulo">
-																	</td>
-																	<td>
-																		<select name="selector1" id="selector1" class="form-control1">
-																			<option>Seleccione.</option>
-																			<option>Dolore, ab unde modi est!</option>
-																			<option>Illum, fuga minus sit eaque.</option>
-																			<option>Consequatur ducimus maiores voluptatum minima.</option>
-																		</select>
-																	</td>
-																</tbody>
-															</table>
-
-															<table class="table table-striped">
-																<thead> 
-																	<tr> 
-																		<th>Jefe o Supervisor:</th> 
-																		<th>Reemplazo de:</th>
-																		
-																	</tr> 
-																</thead>
-																<tbody>
-																	<td>
-																		<input type="text" name="jefe_supervisor" class="form-control" id="" placeholder="Jefe o Supervisor">
-																	</td>
-																	<td>
-																		<input type="text" name="reemplazo" class="form-control" id="" placeholder="Reemplazo de">
-																	</td>
-																</tbody>
-															</table>
-
-															<table class="table table-striped">
-															    <thead> 
-																	<tr> 
-																		<th>Licencia Conducir:</th> 
-																		<th>Talla de Polera:</th>
-																		<th>Talla Pantalón:</th>
-																	</tr> 
-																</thead>
-																<tbody>
-																	<td>
-																		<select name="selector1" id="selector1" class="form-control1">
-																			<option>Seleccione.</option>
-																			<option>Dolore, ab unde modi est!</option>
-																			<option>Illum, fuga minus sit eaque.</option>
-																			<option>Consequatur ducimus maiores voluptatum minima.</option>
-																		</select>
-																	</td>
-
-																	<td>
-																		<input type="text" name="talla_polera" class="form-control" id="titulo" placeholder="Talla de Polera">
-																	</td>
-																	<td>
-																		<input type="text" name="talla_pantalon" class="form-control" id="titulo" placeholder="Talla de Pantalón">
-																	</td>
-																</tbody>
-															</table>
-
-															<table class="table table-striped">
-															    <thead> 
-																	<tr> 
-																		<th>Tipo Documento:</th> 
-																		<th>Centro de Costo:</th>
-																	</tr> 
-																</thead>
-																<tbody>
-																	<td>
-																		<input type="text" name="tipo_docum" class="form-control" id="titulo" placeholder="Tipo de Documento">
-																	</td>
-
-																	<td>
-																		<input type="text" name="centro_costo" class="form-control" id="titulo" placeholder="Centro de Costo">
-																	</td>
-																</tbody>
-															</table>	
-
-															<table class="table table-striped">
-															    <thead> 
-																	<tr> 
-																		<th>C de Beneficio:</th> 
-																		<th>Número de Celular:</th>
-																	</tr> 
-																</thead>
-																<tbody>
-																	<td>
-																		<input type="text" name="c_beneficio" class="form-control" id="titulo" placeholder="C de Beneficio">
-																	</td>
-																	<td>
-																		<input type="text" name="celular" class="form-control" id="titulo" placeholder="Número de Celular">
-																	</td>
-																</tbody>
-															</table>
-		<br>		
-		
-		<button type = "button" class = "btn btn-info" id="comando">Guardar</button>
-		
-		<button type = "button" class = "btn btn-danger" data-dismiss="modal"  id="comando">Cancelar</button>
-		
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- //Modal Datos Personales II -->
-<div class="modal fade bs-example-modal-md-max" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" id="myModal_datos">
-  <div class="modal-dialog modal-md-max" role="document">
-    <div class="modal-content">
-    	<div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="exampleModalLabel">Datos Personales</h4>
-      </div>
-      <div class="modal-body">
-      	<table class="table">
-    <thead> 
-		<tr> 
-			<th>Rut:</th> 
-			<th>Fecha Nacimiento:</th>
-			
-		</tr> 
-	</thead>
-	<tbody>
-		<td>
-			<input type="text" name="rut" class="form-control" id="" placeholder="98.123.456-7">
-		</td>
-		<td>
-			<input placeholder="Fecha Inicio" class="form-control" id="datepicker" type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required=""/>
-		</td>
-		
-	</tbody>
-</table>
-
-<table class="table">
-    <thead> 
-		<tr> 
-			<th>Estado Civil:</th> 
-			<th>Nacionalidad:</th>
-			<th>Sexo:</th>
-															
-		</tr> 
-	</thead>
-	<tbody>
-		<td>
-			<select name="selector1" id="selector1" class="form-control1">
-				<option>Seleccione.</option>
-				<option>Dolore, ab unde modi est!</option>
-				<option>Illum, fuga minus sit eaque.</option>
-				<option>Consequatur ducimus maiores voluptatum min</option>
-			</select>
-		</td>
-		<td>
-			<select name="selector1" id="selector1" class="form-control1">
-				<option>Seleccione.</option>
-				<option>Dolore, ab unde modi est!</option>
-				<option>Illum, fuga minus sit eaque.</option>
-				<option>Consequatur ducimus maiores voluptatum min</option>
-			</select>
-		</td>
-		<td>
-			<select name="selector1" id="selector1" class="form-control1">
-				<option>Seleccione.</option>
-				<option>Dolore, ab unde modi est!</option>
-				<option>Illum, fuga minus sit eaque.</option>
-				<option>Consequatur ducimus maiores voluptatum min</option>
-			</select>
-		</td>
-														
-	</tbody>
-</table>
-
-<table class="table">
-    <thead> 
-		<tr> 
-			<th>Dirección:</th> 
-															
-		</tr> 
-	</thead>
-	<tbody>
-		<td>
-
-			<a href="#" data-toggle="modal" data-target="#myModal1">
-				<input type="text" name="direccion" class="form-control" id="direccion" placeholder="Dirección" >
-			</a>
-			
-		</td>
-														
-	</tbody>
-</table>
-
-
-<table class="table">
-    <thead> 
-		<tr> 
-				<th>Email:</th>			
-		</tr> 
-	</thead>
-	<tbody>
-		<td>
-			<input type="text" name="email" class="form-control" id="email" placeholder="Email">
-		</td>
-														
-	</tbody>
-</table>
-
-<table class="table">
-    <thead> 
-		<tr> 
-			<th>Estudios:</th> 
-			<th>Titulo:</th>
-		</tr> 
-	</thead>
-	<tbody>
-		<td>
-			<select name="selector1" id="selector1" class="form-control1">
-				<option>Seleccione.</option>
-				<option>Dolore, ab unde modi est!</option>
-				<option>Illum, fuga minus sit eaque.</option>
-				<option>Consequatur ducimus maiores voluptatum minima.</option>
-			</select>
-		</td>
-
-		<td>
-			<input type="text" name="titulo" class="form-control" id="titulo" placeholder="Titulo">
-		</td>
-	</tbody>
-</table>	
-		<br>		
-		<button type = "button" class = "btn btn-info" id="comando">Guardar</button>
-		<button type = "button" class = "btn btn-success" id="comando" data-toggle="modal" data-target="#myModal_datos">Siguiente</button>
-		<button type = "button" class = "btn btn-danger" data-dismiss="modal"  id="comando">Cancelar</button>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- //Modal Datos personales II -->
 
 <!-- //Modal Detalle Direccion -->
-<div class="modal fade bs-example-modal-md" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" id="myModal1">
+<div class="modal fade bs-example-modal-md" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" id="myModalDireccion">
   <div class="modal-dialog modal-md" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -898,108 +762,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
   </div>
 </div>
 <!-- //Modal Detalle Direccion -->
-<!-- //Fin Modal Datos Personales -->
-
-
-
-<!-- //Modal Datos de la Empresa -->
-<div class="modal fade bs-example-modal-md" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" id="myModal2">
-  <div class="modal-dialog modal-md" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="exampleModalLabel">Datos de la Empresa</h4>
-      </div>
-
-      <div class="modal-body">
-      	<table class="table">
-    <thead> 
-		<tr> 
-			<th>Clase:</th> 
-			<th>Tipo C.C:</th>
-			
-		</tr> 
-	</thead>
-	<tbody>
-		<td>
-			<input type="text" name="clase" class="form-control" id="clase" placeholder="Clases">
-		</td>
-		<td>
-			<input type="text" name="tipo_cc" class="form-control" id="tipo_cc" placeholder="Tipo CC">
-		</td>
-		
-	</tbody>
-</table>
-
-<table class="table">
-    <thead> 
-		<tr> 
-				<th>Categoria:</th>			
-		</tr> 
-	</thead>
-	<tbody>
-		<td>
-			<input type="text" name="categoria" class="form-control" id="categoria" placeholder="Categoria">
-		</td>
-														
-	</tbody>
-</table>
-
-<table class="table">
-    <thead> 
-		<tr> 
-			<th>Lugar de Pago:</th> 
-															
-		</tr> 
-	</thead>
-	<tbody>
-		<td>
-
-			<a href="#" data-toggle="modal" data-target="#myModal7">
-				<input type="text" name="lugar_pago" class="form-control" id="lugar_pago" placeholder="Lugar de Pago" >
-			</a>
-			
-		</td>
-														
-	</tbody>
-</table>
-
-<table class="table">
-    <thead> 
-		<tr> 
-			<th>Fecha Ingreso:</th> 
-			<th>Fecha Retiro:</th> 
-															
-		</tr> 
-	</thead>
-	<tbody>
-		<td>
-			<input placeholder="Fecha Ingreso" class="form-control" id="datepicker2" type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required=""/>
-		</td>
-
-		<td>
-			<input placeholder="Fecha Retiro" class="form-control" id="datepicker3" type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required=""/>
-		</td>
-														
-	</tbody>
-</table>
-	
-		<br>		
-		<button type = "button" class = "btn btn-info" id="comando">Guardar</button>
-		<button type = "button" class = "btn btn-success" id="comando" data-toggle="modal" data-target="#myModal8">Siguiente</button>
-		<button type = "button" class = "btn btn-danger" data-dismiss="modal"  id="comando">Cancelar</button>
-      </div>
-    </div>
-  </div>
-</div>
 
 <!-- //Modal Lugar Pago-->
-<div class="modal fade bs-example-modal-md" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" id="myModal7">
+<div class="modal fade bs-example-modal-md" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" id="myModalPago">
   <div class="modal-dialog modal-md" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="exampleModalLabel">Detalle Dirección</h4>
+        <h4 class="modal-title" id="exampleModalLabel">Detalle de Pago</h4>
       </div>
 
       <div class="modal-body">
@@ -1016,207 +786,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
   </div>
 </div>
 <!-- //Modal Lugar Pago -->
-
-<!-- //Modal detalle empresa-->
-<div class="modal fade bs-example-modal-md" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" id="myModal8">
-  <div class="modal-dialog modal-md" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="exampleModalLabel">Datos de la Empresa</h4>
-      </div>
-
-      <div class="modal-body">
-      	<select name="selector1" id="selector1" class="form-control1">
-				<option>Motivo Egreso</option>
-				<option>Dolore, ab unde modi est!</option>
-				<option>Illum, fuga minus sit eaque.</option>
-				<option>Consequatur ducimus maiores voluptatum minima.</option>
-		</select>
-      	<br>
-      	<select name="selector1" id="selector1" class="form-control1">
-				<option>Tipo Contrato</option>
-				<option>Dolore, ab unde modi est!</option>
-				<option>Illum, fuga minus sit eaque.</option>
-				<option>Consequatur ducimus maiores voluptatum minima.</option>
-		</select>
-		<br>
-		<input placeholder="Fecha Finiquito" class="form-control" id="datepicker4" type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required=""/>
-		<br>
-
-		<button type = "button" class = "btn btn-info" id="comando">Ingresar</button>
-		<button type = "button" class = "btn btn-danger" data-dismiss="modal"  id="comando">Cancelar</button>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- //Modal detalle empresa -->
-<!-- //Modal Datos Empresa-->
-
-<!-- //Modal L.L.S.S -->
-<div class="modal fade bs-example-modal-md-max" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" id="myModal3">
-  <div class="modal-dialog modal-md-max" role="document">
-    <div class="modal-content">
-    	<div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="exampleModalLabel">L.L.S.S</h4>
-      </div>
-      <div class="modal-body">
-      	<table class="table">
-    <thead> 
-		<tr> 
-			<th>Código Regimen:</th> 
-			<th>Jubilados:</th>
-			
-		</tr> 
-	</thead>
-	<tbody>
-		<td>
-			<select name="selector1" id="selector1" class="form-control1">
-				<option>Seleccione.</option>
-				<option>Dolore, ab unde modi est!</option>
-				<option>Illum, fuga minus sit eaque.</option>
-				<option>Consequatur ducimus maiores voluptatum min</option>
-			</select>
-		</td>
-		<td>
-			<select name="selector1" id="selector1" class="form-control1">
-				<option>Seleccione.</option>
-				<option>Dolore, ab unde modi est!</option>
-				<option>Illum, fuga minus sit eaque.</option>
-				<option>Consequatur ducimus maiores voluptatum min</option>
-			</select>
-		</td>
-		
-	</tbody>
-</table>
-
-<table class="table">
-    <thead> 
-		<tr> 
-			<th>L. Pago Cotiz:</th> 
-			<th>A.F.P:</th>															
-		</tr> 
-	</thead>
-	<tbody>
-		<td>
-			<select name="selector1" id="selector1" class="form-control1">
-				<option>Seleccione.</option>
-				<option>Dolore, ab unde modi est!</option>
-				<option>Illum, fuga minus sit eaque.</option>
-				<option>Consequatur ducimus maiores voluptatum min</option>
-			</select>
-		</td>
-		<td>
-			<select name="selector1" id="selector1" class="form-control1">
-				<option>Seleccione.</option>
-				<option>Dolore, ab unde modi est!</option>
-				<option>Illum, fuga minus sit eaque.</option>
-				<option>Consequatur ducimus maiores voluptatum min</option>
-			</select>
-		</td>														
-	</tbody>
-</table>
-
-<table class="table">
-    <thead> 
-		<tr> 
-			<th>Fecha Incorp.AFP:</th> 
-			<th>Fecha Seguro Cesantia:</th>
-															
-		</tr> 
-	</thead>
-	<tbody>
-		<td>
-			<input placeholder="Fecha Incorp.AFP" class="form-control" id="datepicker5" type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required=""/>
-		</td>
-
-		<td>
-			<input placeholder="Fecha Seguro Cesantia" class="form-control" id="datepicker6" type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required=""/>	
-		</td>
-														
-	</tbody>
-</table>
-	
-		<br>		
-		<button type = "button" class = "btn btn-info" id="comando">Guardar</button>
-		<button type = "button" class = "btn btn-danger" data-dismiss="modal"  id="comando">Cancelar</button>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- //Fin Modal L.L.S.S -->
-
-<!-- //Modal Forma Pago-->
-<div class="modal fade bs-example-modal-md" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" id="myModal4">
-  <div class="modal-dialog modal-md" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="exampleModalLabel">Forma de Pago</h4>
-      </div>
-
-      <div class="modal-body">
-      	<select name="selector1" id="selector1" class="form-control1">
-				<option>Forma Pago</option>
-				<option>Dolore, ab unde modi est!</option>
-				<option>Illum, fuga minus sit eaque.</option>
-				<option>Consequatur ducimus maiores voluptatum minima.</option>
-		</select>
-      	<br>
-      	<select name="selector1" id="selector1" class="form-control1">
-				<option>Banco</option>
-				<option>Dolore, ab unde modi est!</option>
-				<option>Illum, fuga minus sit eaque.</option>
-				<option>Consequatur ducimus maiores voluptatum minima.</option>
-		</select>
-		<br>
-		<input type="text" name="cta_bancaria" class="form-control" id="cta_bancaria" placeholder="Nº Cuenta Bancaria">
-		<br>
-		<input type="text" name="rut" class="form-control" id="rut" placeholder="Rut">
-		<br>
-		<input type="text" name="nombre" class="form-control" id="nombre" placeholder="Nombre Completo">
-		<br>
-		<input type="text" name="email" class="form-control" id="email" placeholder="Email">
-		<br>
-
-		<button type = "button" class = "btn btn-info" id="comando">Ingresar</button>
-		<button type = "button" class = "btn btn-danger" data-dismiss="modal"  id="comando">Cancelar</button>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- //Modal Forma Pago -->
-
-<!-- //Modal Otros-->
-<div class="modal fade bs-example-modal-md" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" id="myModal5">
-  <div class="modal-dialog modal-md" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="exampleModalLabel">Otros</h4>
-      </div>
-
-      <div class="modal-body">
-      	<a href="#" data-toggle="modal" data-target="#myModal12">
-			<input type="text" name="vacaciones" class="form-control" id="vacaciones" placeholder="Vacaciones">
-		</a>
-		<br>
-		<a href="#" data-toggle="modal" data-target="#myModal9">
-			<input type="text" name="cheque_restau" class="form-control" id="cheque_restau" placeholder="Cheque Restaurante">
-		</a>
-		<br>
-		<a href="#" data-toggle="modal" data-target="#myModal10">
-			<input type="text" name="licencia" class="form-control" id="licencia" placeholder="Licencias Médicas">
-		</a>
-		<br>
-
-		<button type = "button" class = "btn btn-info" id="comando">Ingresar</button>
-		<button type = "button" class = "btn btn-danger" data-dismiss="modal"  id="comando">Cancelar</button>
-      </div>
-    </div>
-  </div>
-</div>
 
 <!-- //Modal Vacaciones-->
 <div class="modal fade bs-example-modal-md" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" id="myModal12">
@@ -1352,7 +921,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
   </div>
 </div>
 <!-- //Modal Licencias M -->
-<!-- //Modal Otros -->
 
 <!-- //Modal Parametros -->
 <div class="modal fade bs-example-modal-md" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" id="myModal13">
