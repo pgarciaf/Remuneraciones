@@ -118,7 +118,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
   										<li><a href="#datosempresa" data-toggle="tab">Datos Empresa</a></li>
   										<li><a href="#datosllss" data-toggle="tab">L.L.S.S</a></li>
   										<li><a href="#pago" data-toggle="tab">Forma Pago</a></li>
-  										<li><a href="#" data-toggle="tab">Otros</a></li>
+  										<li><a href="#otros" data-toggle="tab">Otros</a></li>
   										<li><a href="#configuracion" data-toggle="tab">Configuraciones</a></li>
 									</ul>
 								</div>
@@ -134,7 +134,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 														<thead> 
 															<tr> 
 																<th>Rut:</th> 
-																<th>Nombre Completo:</th>
+																<th>Número de Ficha:</th>
 																		
 															</tr> 
 														</thead>
@@ -143,7 +143,25 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 																<input type="text" name="rut" class="form-control" id="" placeholder="98.123.456-7">
 															</td>
 															<td>
+																<input type="text" name="rut" class="form-control" id="" placeholder="Número de Ficha">
+															</td>
+														</tbody>
+													</table>
+
+													<table class="table table-striped">
+														<thead> 
+															<tr> 
+																<th>Nombre Completo:</th> 
+																<th>Cargo:</th>
+																		
+															</tr> 
+														</thead>
+														<tbody>
+															<td>
 																<input type="text" name="rut" class="form-control" id="" placeholder="Nombre Completo">
+															</td>
+															<td>
+																<input type="text" name="rut" class="form-control" id="" placeholder="Cargo">
 															</td>
 														</tbody>
 													</table>
@@ -213,6 +231,34 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 															</td>
 															<td>
 																<input type="text" name="email" id="email" class="form-control" placeholder="Email">
+															</td>
+														</tbody>
+													</table>
+
+													<table class="table table-striped">
+														<thead> 
+															<tr> 
+																<th>Tipo de Renta:</th> 
+																<th>Empresa:</th>
+																		
+															</tr> 
+														</thead>
+														<tbody>
+															<td>
+																<select name="selector1" id="selector1" class="form-control1">
+																	<option>Seleccione.</option>
+																	<option>Dolore, ab unde modi est!</option>
+																	<option>Illum, fuga minus sit eaque.</option>
+																	<option>Consequatur ducimus maiores voluptatum min</option>
+																</select>
+															</td>
+															<td>
+																<select name="selector1" id="selector1" class="form-control1">
+																	<option>Seleccione.</option>
+																	<option>Dolore, ab unde modi est!</option>
+																	<option>Illum, fuga minus sit eaque.</option>
+																	<option>Consequatur ducimus maiores voluptatum min</option>
+																</select>
 															</td>
 														</tbody>
 													</table>
@@ -380,6 +426,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 															<tr> 
 																<th>Fecha de Ingreso:</th> 
 																<th>Fecha de Retiro:</th>
+																<th>Fecha de Finiquito:</th>
 															</tr> 
 														</thead>
 														<tbody>
@@ -388,6 +435,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 															</td>
 															<td>
 																<input placeholder="Fecha Retiro" class="form-control" id="datepicker3" type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required=""/>
+															</td>
+															<td>
+																<input placeholder="Fecha de Finiquito" class="form-control" id="datepicker4" type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required=""/>
 															</td>
 		
 														</tbody>
@@ -398,7 +448,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 															<tr> 
 																<th>Motivo de Egreso:</th> 
 																<th>Tipo de Contrato:</th>
-																<th>Fecha de Finiquito:</th>
+																<th>Jornada de Trabajo:</th>
 															</tr> 
 														</thead>
 														<tbody>
@@ -419,7 +469,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 																</select>
 															</td>
 															<td>
-																<input placeholder="Fecha de Finiquito" class="form-control" id="datepicker4" type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required=""/>
+																<select name="selector1" id="selector1" class="form-control1">
+																	<option>Seleccione</option>
+																	<option>Dolore, ab unde modi est!</option>
+																	<option>Illum, fuga minus sit eaque.</option>
+																	<option>Consequatur ducimus maiores voluptatum minima.</option>
+																</select>
 															</td>
 		
 														</tbody>
@@ -499,6 +554,105 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 															</td>
 														</tbody>
 													</table>
+
+													<table class="table table-striped">
+														<thead>
+															<tr>
+																<th>Cese AFC:</th>
+																<th>Isapre:</th>
+															</tr>
+														</thead>
+														<tbody>
+															<td>
+																<input type="text" name="cese" class="form-control" id="cese" placeholder="Cese AFC">
+															</td>
+															<td>
+																<input type="text" name="isapre" class="form-control" id="isapre" placeholder="Isapre">
+															</td>
+														</tbody>
+													</table>
+
+													<table class="table table-striped">
+														<thead>
+															<tr>
+																<th>Número FUN:</th>
+																<th>Vencimiento de Plan:</th>
+															</tr>
+														</thead>
+														<tbody>
+															<td>
+																<input type="text" name="numero_fun" class="form-control" id="numero_fun" placeholder="Número FUN">
+															</td>
+
+															<td>
+																<input placeholder="Vencimiento Plan" class="form-control" id="datepicker9" type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required=""/>
+															</td>
+														</tbody>
+													</table>
+
+													<table class="table table-striped">
+														<thead>
+															<tr>
+																<th>Tramo p/Asig. Fami:</th>
+																<th>Trabajo Pesado/Insalub:</th>
+															</tr>
+														</thead>
+														<tbody>
+															<td>
+																<input type="text" name="tramo" class="form-control" id="tramo" placeholder="Tramo p/Asig. Familiar">
+															</td>
+															<td>
+																<input type="text" name="trabajo_pesado" class="form-control" id="trabajo_pesado" placeholder="Trabajo Pesado/Insalub">
+															</td>
+														</tbody>
+													</table>
+
+													<table class="table table-striped">
+														<thead>
+															<tr>
+																<th>Estado APVC:</th>
+																<th>Fecha APVC:</th>
+																<th>Término de Subsidio:</th>
+															</tr>
+														</thead>
+														<tbody>
+															<td>
+																<input type="text" name="estado_apvc" class="form-control" id="estado_apvc" placeholder="Estado APVC">
+															</td>
+															<td>
+																<input placeholder="Fecha APVC" class="form-control" id="datepicker10" type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required=""/>
+															</td>
+															<td>
+																<input placeholder="Término de Subsidio" class="form-control" id="datepicker11" type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required=""/>
+															</td>
+														</tbody>
+													</table>
+
+													<table class="table table-striped">
+														<thead>
+															<tr>
+																<th>C.C.A.F:</th>
+																<th>Zona A. Familiar:</th>
+																<th>Jornada de Trabajo:</th>
+															</tr>
+														</thead>
+														<tbody>
+															<td>
+																<input type="text" name="ccaf" class="form-control" id="ccaf" placeholder="C.C.A.F">
+															</td>
+															<td>
+																<input type="text" name="zona_familiar" class="form-control" id="zona_familiar" placeholder="Zona A. Familiar">
+															</td>
+															<td>
+																<select name="selector1" id="selector1" class="form-control1">
+																	<option>Seleccione.</option>
+																	<option>Dolore, ab unde modi est!</option>
+																	<option>Illum, fuga minus sit eaque.</option>
+																	<option>Consequatur ducimus maiores voluptatum min</option>
+																</select>
+															</td>
+														</tbody>
+													</table>
 												</section>
 											</div>
 
@@ -561,6 +715,147 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 															</td>
 															<td>
 																<input type="text" name="email" class="form-control" id="email" placeholder="Email">
+															</td>
+														</tbody>
+													</table>
+												</section>
+											</div>
+
+											<div class="tab-pane" id="otros">
+												<section class="otros">
+													<table class="table table-striped">
+														<thead>
+															<tr>
+																<th>Número Funcionario SAP:</th>
+																<th>Número de Tarjeta:</th>
+															</tr>
+														</thead>
+														<tbody>
+															<td>
+																<input type="text" name="funcionario" class="form-control" id="funcionario" placeholder="Número Funcionario SAP">
+															</td>
+															<td>
+																<input type="text" name="tarjeta" class="form-control" id="tarjeta" placeholder="Número de Tarjeta">
+															</td>
+														</tbody>
+													</table>
+
+													<table class="table table-striped">
+														<thead>
+															<tr>
+																<th>Imprime Tickets:</th>
+																<th>Horas de Trabajo:</th>
+															</tr>
+														</thead>
+														<tbody>
+															<td>
+																<select name="selector1" id="selector1" class="form-control1">
+																	<option>Seleccione.</option>
+																	<option>Dolore, ab unde modi est!</option>
+																	<option>Illum, fuga minus sit eaque.</option>
+																	<option>Consequatur ducimus maiores voluptatum min</option>
+																</select>
+															</td>
+															<td>
+																<input type="text" name="horas_trabajo" class="form-control" id="horas_trabajo" placeholder="Horas de Trabajo">
+															</td>
+														</tbody>
+													</table>
+
+													<table class="table table-striped">
+														<thead>
+															<tr>
+																<th>Código de Anexo:</th>
+																<th>2do Vencimiento:</th>
+															</tr>
+														</thead>
+														<tbody>
+															<td>
+																<input type="text" name="codigo_anexo" class="form-control" id="codigo_anexo" placeholder="Código de Anexo">
+															</td>
+															<td>
+																<input placeholder="2do Vencimiento" class="form-control" id="datepicker12" type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required=""/>
+															</td>
+														</tbody>
+													</table>
+
+													<table class="table table-striped">
+														<thead>
+															<tr>
+																<th>Anticipo Ind Monto:</th>
+																<th>Anticipo Ind Días:</th>
+															</tr>
+														</thead>
+														<tbody>
+															<td>
+																<input type="text" name="anticipo_monto" class="form-control" id="anticipo_monto" placeholder="0">
+															</td>
+															<td>
+																<input type="text" name="anticipo_dias" class="form-control" id="anticipo_dias" placeholder="0">
+															</td>
+														</tbody>
+													</table>
+
+													<table class="table table-striped">
+														<thead>
+															<tr>
+																<th>Autoriz Firma Doc:</th>
+																<th>Sucursal Entrenam:</th>
+																<th>Código Ocupación:</th>
+															</tr>
+														</thead>
+														<tbody>
+															<td>
+																<select name="selector1" id="selector1" class="form-control1">
+																	<option>Seleccione.</option>
+																	<option>Dolore, ab unde modi est!</option>
+																	<option>Illum, fuga minus sit eaque.</option>
+																	<option>Consequatur ducimus maiores voluptatum min</option>
+																</select>
+															</td>
+															<td>
+																<input type="text" name="sucursal_entrenamiento" class="form-control" id="sucursal_entrenamiento" placeholder="Sucursal Entrenamiento">
+															</td>
+															<td>
+																<input type="text" name="codigo_ocupacion" class="form-control" id="codigo_ocupacion" placeholder="0">
+															</td>
+														</tbody>
+													</table>
+
+													<table class="table table-striped">
+														<thead>
+															<tr>
+																<th>Evaluador:</th>
+																<th>Usuario Windows:</th>
+															</tr>
+														</thead>
+														<tbody>
+															<td>
+																<input type="text" name="evaluador" class="form-control" id="evaluador" placeholder="Evaluador">
+															</td>
+															<td>
+																<input type="text" name="usuario_windows" class="form-control" id="usuario_windows" placeholder="Usuario Windows">
+															</td>
+														</tbody>
+													</table>
+
+													<table class="table table-striped">
+														<thead>
+															<tr>
+																<th>Cuenta Contable:</th>
+																<th>Nivel de Sence:</th>
+																<th>Franquicia Sence %:</th>
+															</tr>
+														</thead>
+														<tbody>
+															<td>
+																<input type="text" name="cuenta_contable" class="form-control" id="cuenta_contable" placeholder="0">
+															</td>
+															<td>
+																<input type="text" name="nivel_sence" class="form-control" id="nivel_sence" placeholder="0">
+															</td>
+															<td>
+																<input type="text" name="franquicia" class="form-control" id="franquicia" placeholder="0,00 %">
 															</td>
 														</tbody>
 													</table>
@@ -799,17 +1094,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       <div class="modal-body">
       	<input placeholder="Fecha" class="form-control" id="datepicker7" type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required=""/>
       	<br>
+      	<input type="text" name="anos_reconocido" class="form-control" id="anos_reconocido" placeholder="Años Reconocidos">
+      	<br>
       	<select name="selector1" id="selector1" class="form-control1">
-				<option>Form Vacaciones</option>
+				<option>Formula Vacaciones</option>
 				<option>Dolore, ab unde modi est!</option>
 				<option>Illum, fuga minus sit eaque.</option>
 				<option>Consequatur ducimus maiores voluptatum minima.</option>
 		</select>
 		<br>
-		<input type="text" name="dias" class="form-control" id="dias" placeholder="Días Base">
+		<input type="text" name="dias" class="form-control" id="dias" placeholder="Días de Base">
 		<br>
-		
-
+		<input type="text" name="dias_iniciales" class="form-control" id="dias_iniciales" placeholder="Días Iniciales">
+		<br>
+	
 		<button type = "button" class = "btn btn-info" id="comando">Ingresar</button>
 		<button type = "button" class = "btn btn-danger" data-dismiss="modal"  id="comando">Cancelar</button>
       </div>
@@ -1518,7 +1816,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script src="js/jquery-ui.js"></script>
 <script>
 	$(function() {
-		$( "#datepicker,#datepicker2,#datepicker3,#datepicker4,#datepicker5,#datepicker6,#datepicker7,#datepicker8").datepicker();
+		$( "#datepicker,#datepicker2,#datepicker3,#datepicker4,#datepicker5,#datepicker6,#datepicker7,#datepicker8,#datepicker9,#datepicker10,#datepicker11,#datepicker12").datepicker();
 	});
 </script>
 <!--date-piker-->

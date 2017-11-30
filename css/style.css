@@ -35,6 +35,8 @@ a {
 }
 a:hover { transition: all 200ms ease-in-out; }
 
+
+
 .page-container {
   min-width: 1260px;
   position: relative;
