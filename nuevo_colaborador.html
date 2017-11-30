@@ -476,7 +476,65 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 																	<option>Consequatur ducimus maiores voluptatum minima.</option>
 																</select>
 															</td>
-		
+														</tbody>
+													</table>
+
+													<table class="table table-striped">
+    													<thead> 
+															<tr> 
+																<th>Sección:</th> 
+																<th>Código Ine:</th>
+																<th>Sindicato:</th>
+															</tr> 
+														</thead>
+														<tbody>
+															<td>
+																<input type="text" name="seccion" class="form-control" id="seccion" placeholder="Sección">
+															</td>
+															<td>
+																<input type="text" name="codigo_ine" class="form-control" id="codigo_ine" placeholder="Código Ine">
+															</td>
+															<td>
+																<input type="text" name="sindicato" class="form-control" id="sindicato" placeholder="Sindicato">
+															</td>
+														</tbody>
+													</table>
+
+													<table class="table table-striped">
+    													<thead> 
+															<tr> 
+																<th>Régimen de Pago:</th> 
+																<th>Sitio Laboral:</th>
+																<th>Zona Brecha:</th>
+															</tr> 
+														</thead>
+														<tbody>
+															<td>
+																<input type="text" name="regimen_pago" class="form-control" id="regimen_pago" placeholder="Régimen de Pago">
+															</td>
+															<td>
+																<input type="text" name="sitio_laboral" class="form-control" id="sitio_laboral" placeholder="Sitio Laboral">
+															</td>
+															<td>
+																<input type="text" name="zona_brecha" class="form-control" id="zona_brecha" placeholder="Zona Brecha">
+															</td>
+														</tbody>
+													</table>
+
+													<table class="table table-striped">
+    													<thead> 
+															<tr> 
+																<th>Fecha Real:</th> 
+																<th>1er Vencimiento:</th>
+															</tr> 
+														</thead>
+														<tbody>
+															<td>
+																<input placeholder="Fecha Real" class="form-control" id="fecha_real" type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required=""/>
+															</td>
+															<td>
+																<input placeholder="1er Vencimiento" class="form-control" id="vencimiento_1" type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required=""/>
+															</td>
 														</tbody>
 													</table>
 												</section>
@@ -1836,7 +1894,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script src="js/jquery-ui.js"></script>
 <script>
 	$(function() {
-		$( "#datepicker,#datepicker2,#datepicker3,#datepicker4,#datepicker5,#datepicker6,#datepicker7,#datepicker8,#datepicker9,#datepicker10,#datepicker11,#datepicker12,#feriados").datepicker();
+		$( "#datepicker,#datepicker2,#datepicker3,#datepicker4,#datepicker5,#datepicker6,#datepicker7,#datepicker8,#datepicker9,#datepicker10,#datepicker11,#datepicker12,#feriados,#fecha_real,#vencimiento_1").datepicker();
 	});
 </script>
 <!--date-piker-->
