@@ -42,78 +42,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="left-content">
 	   		<div class="inner-content">
 				<div class="header-section">
-					<div class="top_menu">
-						<div class="main-search">
-							<form>
-								<input type="text" value="Buscar" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Buscar';}" class="text"/>
-								<input type="submit" value="">
-							</form>
-							<div class="close"><img src="images/cross.png" /></div>
-						</div>
-						<div class="srch"><button></button></div>
-						<script type="text/javascript">
-							$('.main-search').hide();
-							$('button').click(function (){
-								$('.main-search').show();
-								$('.main-search text').focus();
-							});
-							$('.close').click(function(){
-								$('.main-search').hide();
-							});
-						</script>
-
-						<div class="profile_details_left">
-							<ul class="nofitications-dropdown">
-								<li class="dropdown note">
-									<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-user" aria-hidden="true"></i> <span class="badge"></span></a>
-									
-									<ul class="dropdown-menu two first">
-										<li>
-											<div class="notification_header">
-												<h3>Administrador </h3> 
-											</div>
-										</li>
-										
-										<li>
-											<a href="#">
-												<div class="user_img"><img src="images/1.jpg" alt=""></div>
-												<div class="notification_desc">
-													<p>María José Rodr</p>
-													<p><span>Jefe de Departamento</span></p>
-												</div>
-												<div class="clearfix"></div>	
-											</a>
-										</li>
-									</ul>
-								</li>
-
-								<li class="dropdown note">
-									<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-power-off" aria-hidden="true"></i> <span class="badge"></span></a>
-									<ul class="dropdown-menu two first">
-										<li>
-											<div class="notification_header">
-												<h3>Cerrar Sesión</h3> 
-											</div>
-										</li>
-										<li>
-											<a href="index.html">
-												<div class="user_img">
-													<img src="images/cerrar.png" alt="cerrar">
-												</div>
-												<div class="notification_desc">
-												
-													<p><span>Cerrar Sesión</span></p>
-												</div>
-												<div class="clearfix"></div>	
-											</a>
-										</li>
-									</ul>
-								</li>
-							</ul>
-						</div>
-							<div class="clearfix"></div>	
-							<!--//profile_details-->
-						</div>
+					
 						<!--//menu-right-->
 					<div class="clearfix"></div>
 				</div>
@@ -124,7 +53,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<h3 class="inner-tittle two">Seleccione Empresa</h3>
 									<div class="graph">
 										<div class="tables">
-											<table class="table table-bordered"> 
+											<table class="table table-hover"> 
 												<thead> 
 													<tr> 
 														<th>#</th> 
@@ -134,12 +63,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 													</tr> 
 												</thead> 
 											<tbody> 
-												<tr> 
+												<tr id="selec"> 
 													<th scope="row">1</th> 
 													<td>Mark</td> 
 													<td>Empresa de transporte Publico</td> 
 													<td>
-														<a href="inicio.html" type="button" class="btn btn-info">Seleccionar</a>
+														<a href="inicio.html" type="button" class="btn btn-info"><i class="fa fa-eye" aria-hidden="true"></i> Ver</a>
 													</td> 
 												</tr> 
 												<tr> 
@@ -147,7 +76,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 													<td>Jacob</td> 
 													<td>Empresa de Comida y embutidos</td> 
 													<td>
-														<a href="inicio.html" type="button" class="btn btn-info">Seleccionar</a>
+														<a href="inicio.html" type="button" class="btn btn-info"><i class="fa fa-eye" aria-hidden="true"></i> Ver</a>
 													</td> 
 												</tr> 
 												<tr> 
@@ -155,7 +84,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 													<td>Larry</td> 
 													<td>Empresa de Frutas y Verduras</td> 
 													<td>
-														<a href="inicio.html" type="button" class="btn btn-info">Seleccionar</a>
+														<a href="inicio.html" type="button" class="btn btn-info"><i class="fa fa-eye" aria-hidden="true"></i> Ver</a>
 													</td> 
 												</tr> 
 											</tbody> 
@@ -175,7 +104,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
   									toggle: false
 								})
 							</script>
-
+	</div>
 <!-- //Modal periodo -->
 <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" id="myModal1">
   <div class="modal-dialog modal-sm" role="document">
@@ -891,7 +820,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<!--<img id="logo" src="" alt="Logo"/>--> 
 				  		</a> 
 					</header>
-					<div style="border-top:1px solid rgba(69, 74, 84, 0.7)"></div>           
+					<div style="border-top:1px solid rgba(69, 74, 84, 0.7)"></div>
+
+					<!--/down-->
+					<div class="down">	
+						<a href="index.html"><img src="images/admin.jpg"></a>
+						<a href="index.html"><span class=" name-caret">Jasmin Leo</span></a>
+						<p>Administrador</p>
+						<ul>
+							
+							<li><a class="tooltips" href="index.html"><span>Cerrar</span><i class="lnr lnr-power-switch"></i></a></li>
+						</ul>
+						
+					</div>
+				<!--//down-->           
 				</div>
 				<div class="clearfix"></div>		
 							</div>

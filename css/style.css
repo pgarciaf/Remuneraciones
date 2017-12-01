@@ -64,7 +64,7 @@ a:hover { transition: all 200ms ease-in-out; }
 }
 .left-content {
     float: right;
-        width: 87%;
+    width: 87%;
 }
 .page-container.sidebar-collapsed {
   transition: all 100ms linear;
@@ -196,7 +196,7 @@ a:hover { transition: all 200ms ease-in-out; }
     font-weight: 400;
     position: relative;
     display: block;
-    padding: 13px 20px;
+    padding: 10px 20px;
     color: #fff;
     white-space: nowrap;
     z-index: 2;
@@ -405,7 +405,7 @@ span.name-caret {
 }
 
 .down{
-	padding: 0px 0px;
+	padding: 10px 0 10px;
   text-align: center;
   background: #fff;
 }

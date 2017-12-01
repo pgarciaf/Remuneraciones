@@ -63,28 +63,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									</script>
 						<div class="profile_details_left">
 							<ul class="nofitications-dropdown">
-								<li class="dropdown note">
-									<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-user" aria-hidden="true"></i> <span class="badge"></span></a>
-									
-									<ul class="dropdown-menu two first">
-										<li>
-											<div class="notification_header">
-												<h3>Administrador </h3> 
-											</div>
-										</li>
-										
-										<li>
-											<a href="#">
-												<div class="user_img"><img src="images/1.jpg" alt=""></div>
-												<div class="notification_desc">
-													<p>María José Rodr</p>
-													<p><span>Jefe de Departamento</span></p>
-												</div>
-												<div class="clearfix"></div>	
-											</a>
-										</li>
-									</ul>
-								</li>
+								
 
 								<li class="dropdown note">
 									<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-power-off" aria-hidden="true"></i> <span class="badge"></span></a>
@@ -816,17 +795,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</header>
 			<div style="border-top:1px solid rgba(69, 74, 84, 0.7)"></div>
 			<!--/down-->
-			<div class="down">	
-						<p>Nombre de la Empresa</p>
+					<div class="down">	
+						<a href="index.html"><img src="images/admin.jpg"></a>
 						<ul>
-							<li><a class="tooltips" href="inicio.html"><span>Salir</span><i class="lnr lnr-power-switch"></i></a></li>
+							<li><a class="tooltips" href="perfil.html"><span>Perfil</span><i class="lnr lnr-user"></i></a></li>
+							<li><a class="tooltips" href="seleccion_empresa.html"><span>CerrarEmpr</span><i class="lnr lnr-power-switch"></i></a></li>
 						</ul>
+						<a href="index.html"><span class=" name-caret">Jasmin Leo</span></a>
+						<p>Empresa Transporte Público</p>
+						
 					</div>
-			<!--//down-->
-                            <div class="menu">
+				<!--//down--> 
+                           <div class="menu">
 									<ul id="menu" >
-										<li><a href="inicio.html"><i class="fa fa-tachometer"></i> <span>Menú</span></a></li>
-
+										
 										 <li id="menu-academico" ><a href="#"><i class="fa fa-table"></i> <span>Recursos Humanos</span> <span class="fa fa-angle-right" style="float: right"></span></a>
 										   <ul id="menu-academico-sub" >
 											<li id="menu-academico-avaliacoes" ><a href="colaborador.html"> Mantencion Personal</a></li>
@@ -857,7 +839,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 														<li id="menu-mensagens-recebidas"  style="width:210px"><a href="#" data-toggle="modal" data-target="#myModalCampos">Ingreso Masivo de Campos</a></li>
 
 														<li id="menu-mensagens-recebidas"  style="width:210px"><a href="#" data-toggle="modal" data-target="#myModalPlanillas">Ingreso Según plantilla</a></li>
-														
+
 														<li id="menu-mensagens-recebidas"  style="width:210px"><a href="#">Mantencion de Plantillas</a></li>
 										  			</ul>
                                                 </li>
@@ -865,13 +847,25 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 												<li id="menu-academico-boletim" ><a href="horas.html">Horas Extraordinarias</a></li>
 												<li id="menu-academico-boletim" ><a href="anticipo.html">Generación de Anticipos</a></li>
 
-												<li id="menu-academico-boletim" ><a href="creacion_hab_des.html">Registro Hab/Desc Variables</a></li>
+												<li id="menu-academico-boletim" ><a href="registro_hab_des.html">Registro Hab/Desc Variables</a></li>
 												<li id="menu-academico-boletim" ><a href="movimiento_persona.html">Movimiento del Personal</a></li>
                                                 <li id="menu-academico-boletim" ><a href="calculo_remuneraciones.html">Calculo de Remuneraciones</a></li>
 												<li id="menu-academico-boletim" ><a href="detalles.html">Detalle de Remuneraciones</a></li>
 
 											  </ul>
 										 </li>
+
+										 <li id="menu-comunicacao" ><a href="#"><i class="fa fa-cog" aria-hidden="true"></i> <span>Opc. de Configuracion</span><span class="fa fa-angle-right" style="float: right"></span></a>
+									  		<ul id="menu-comunicacao-sub" >
+												<li id="menu-mensagens" style="width:200px" ><a href="#" data-toggle="modal" data-target="#myModal13">Parámetros Mensuales</a></li>
+												<li id="menu-mensagens" style="width:200px" ><a href="#">Otros Aportes</a></li>
+												<li id="menu-mensagens" style="width:200px" ><a href="impuesto_unico.html">Impuesto Único</a></li>
+												<li id="menu-mensagens" style="width:200px" ><a href="creacion_hab_des.html">Creación de Hab/Des</a></li>
+												<li id="menu-mensagens" style="width:200px" ><a href="#">Fáctores de Actualización</a></li>
+												<li id="menu-mensagens" style="width:200px" ><a href="#" data-toggle="modal" data-target="#myModalFeriados">Feriados</a></li>
+												<li id="menu-mensagens" style="width:200px" ><a href="#">Cuentas Centralización</a></li>
+									  		</ul>
+										</li>
 
 										 <li id="menu-comunicacao" ><a href="#"><i class="fa fa-book"></i> <span>Reportes y Consultas</span><span class="fa fa-angle-right" style="float: right"></span></a>
 									  		<ul id="menu-comunicacao-sub" >
@@ -886,33 +880,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									  		</ul>
 										</li>
 
-										<li id="menu-comunicacao" ><a href="#"><i class="fa fa-cog" aria-hidden="true"></i> <span>Opc. de Configuracion</span><span class="fa fa-angle-right" style="float: right"></span></a>
-									  		<ul id="menu-comunicacao-sub" >
-												<li id="menu-mensagens" style="width:200px" ><a href="#" data-toggle="modal" data-target="#myModal13">Parámetros Mensuales</a></li>
-												<li id="menu-mensagens" style="width:200px" ><a href="#">Otros Aportes</a></li>
-												<li id="menu-mensagens" style="width:200px" ><a href="impuesto_unico.html">Impuesto Único</a></li>
-												<li id="menu-mensagens" style="width:200px" ><a href="creacion_hab_des.html">Creación de Hab/Des</a></li>
-												<li id="menu-mensagens" style="width:200px" ><a href="#">Fáctores de Actualización</a></li>
-												<li id="menu-mensagens" style="width:200px" ><a href="#" data-toggle="modal" data-target="#myModalFeriados">Feriados</a></li>
-												<li id="menu-mensagens" style="width:200px" ><a href="#">Cuentas Centralización</a></li>
-									  		</ul>
-										</li>
-
-                                     <li id="menu-comunicacao" ><a href="#"><i class="fa fa-list"></i> <span>Procesos Mensuales</span><span class="fa fa-angle-right" style="float: right"></span></a>
-                                        <ul>
-											<li><a href="#" data-toggle="modal" data-target="#myModalCentralizar"> Centralizacion Mensual</a></li>
-						           			<li><a href="#" data-toggle="modal" data-target="#myModalCierre"> Cierre Mensual</a></li>
-						           			<li id="menu-academico-boletim" ><a href="#">Transferencia a Bancos y Otros</a>
-                                                <ul id="menu-mensagens-sub" >
-													<li id="menu-mensagens-enviadas" style="width:200px" ><a href="facturacion.html">Traspaso a Bancos</a></li>
-													<li id="menu-mensagens-recebidas"  style="width:200px"><a href="#">Previred</a></li>
-													<li id="menu-mensagens-recebidas"  style="width:200px"><a href="#">Emisión de Cheques</a></li>
-                                                </ul> 
-                                            </li>
-									 	</ul>
-
-
-                                     </li>
+                                     	<li id="menu-comunicacao" ><a href="#"><i class="fa fa-list"></i> <span>Procesos Mensuales</span><span class="fa fa-angle-right" style="float: right"></span></a>
+                                        	<ul>
+												<li><a href="#" data-toggle="modal" data-target="#myModalCentralizar"> Centralizacion Mensual</a></li>
+						           				<li><a href="#" data-toggle="modal" data-target="#myModalCierre"> Cierre Mensual</a></li>
+						           				<li id="menu-academico-boletim" ><a href="#">Transferencia a Bancos y Otros</a>
+                                                	<ul id="menu-mensagens-sub" >
+														<li id="menu-mensagens-enviadas" style="width:200px" ><a href="facturacion.html">Traspaso a Bancos</a></li>
+														<li id="menu-mensagens-recebidas"  style="width:200px"><a href="#">Previred</a></li>
+														<li id="menu-mensagens-recebidas"  style="width:200px"><a href="#">Emisión de Cheques</a></li>
+                                                	</ul> 
+                                            	</li>
+									 		</ul>
+                                     	</li>
 									
 									 <li><a href="#"><i class="fa fa-folder" aria-hidden="true"></i><span>Aux. Remuneraciones</span><span class="fa fa-angle-right" style="float: right"></span></a>
 									   	<ul>
@@ -931,10 +911,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										  </ul>
 									 </li>	
 								</ul>
-								</div>
-							  </div>
-							  <div class="clearfix"></div>		
 							</div>
+						</div>
+						<div class="clearfix"></div>		
+					</div>
 							<script>
 							var toggle = true;
 										
