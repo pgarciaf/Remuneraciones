@@ -4084,6 +4084,7 @@ button.btn.btn-default.tip {
     font-size: 0.95em;
     color: #777;
     line-height: 1.9em;
+    text-align: justify;
 }
 p.time {
     font-size: 0.8em;
